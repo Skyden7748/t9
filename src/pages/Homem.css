@@ -1,0 +1,83 @@
+.homem-main{
+    height: 90vh;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;
+    background-color:rgb(17, 18, 19);
+    background-image:
+    radial-gradient(at  0%  , hsla(240, 36%, 12%, 0.86) 0px, transparent 50%),
+    radial-gradient(at   99% , hsla(266,60%,13%,0) 0px, transparent 50%);
+    position: relative;
+    border-bottom: 1px solid rgba(128, 128, 128,0.1);
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.he11{
+    font-size: 5rem;
+    letter-spacing:3px;
+    line-height: 80px;
+    font-weight: 500;
+    background-color:hsla(0,0%,88%,1);
+background-image:
+radial-gradient(at 43% 100%, hsla(45,0%,0%,0.43) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(78,29%,0%,0) 0px, transparent 50%);
+   -webkit-background-clip: text; /* Clip the background to text */
+  -webkit-text-fill-color: transparent;
+}
+.he22{
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.721);
+    font-weight: 500;
+    letter-spacing: ;
+    line-height: 50px;
+
+    background-color:hsla(0,0%,88%,1);
+background-image:
+radial-gradient(at 43% 100%, hsla(45,0%,0%,0.43) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(78,29%,0%,0) 0px, transparent 50%);
+    -webkit-background-clip: text; /* Clip the background to text */
+  -webkit-text-fill-color: transparent;
+    
+}
+.he33{
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.721);
+    font-weight: 500;
+    line-height: 64px;
+
+    background-color:hsla(0,0%,88%,1);
+background-image:
+radial-gradient(at 43% 100%, hsla(45,0%,0%,0.43) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(78,29%,0%,0) 0px, transparent 50%);
+    -webkit-background-clip: text; /* Clip the background to text */
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.homes:after{
+    content: '';
+    position: absolute;
+    top:150px;
+    left:-380px;
+    width: 800px;
+    height: 600px;
+    background-image: url(../assets/hero-90-blured2.png);
+    background-size: cover; /* Ensures the image covers the area */
+    background-repeat: no-repeat;
+    scale: 0.9;
+    opacity: 0.4;
+}
+.homes{
+    width: 20rem;
+    position: relative;
+    top: -20px;
+    /* border: 1px solid red; */
+    display: grid;
+    
+}
+.homes AnimatedShinyText {
+    font-size: 1em;
+}

@@ -1,0 +1,32 @@
+.cc{
+    border-right: 1px solid rgb(56, 56, 56);
+}
+
+.ccc{
+    
+}
+
+.card-content-main2{
+    
+     
+}
+.card-content-main22{
+    
+    
+}
+
+.card-content-01{
+    
+}
+
+.card-content-body{
+}
+.card-content-main{
+    
+}
+
+@media  (max-width: 640px) {
+    .cc{
+        border-right: 0px solid rgb(56, 56, 56);
+    }
+}
