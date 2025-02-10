@@ -5,7 +5,7 @@ import p1 from '../assets/p-1.jpg';
 
 import { PhoneCallIcon ,  } from 'lucide-react'
 import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons'
-import { Progress } from './progress';
+import { Progress } from './Progress';
 import { BentoGrid, BentoCard } from './BentoGrid';
 import bg1 from '../assets/card-img-1.png';
 import bg0 from '../assets/card-img-0.png';
