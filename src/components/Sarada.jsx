@@ -197,14 +197,7 @@ function Sarada() {
                                       </div>
                                    </div>
 
-                                   <div className='mt-4'>
-                                      <h2 className='text-lg font-semibold text-neutral-300   '  >Finance <span className='font-[100]'>|</span> 20%</h2>
-                                      <div className='flex '>
-                                         <div className='w-[100%] flex' > <Progress  value={20}/>   </div>
-                                         
-                                         
-                                      </div>
-                                   </div>
+                                   
                              </div>
                              <div style={{ backgroundImage: `url(${theartist01})` }}  className=' bg-cover bg-center md:w-[40%] w-[100%] mt-5 md:mt-0   [border:1px_solid_rgba(255,255,255,.1)] rounded-xl [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] p-10 flex items-end ' >
                                    

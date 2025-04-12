@@ -41,8 +41,61 @@ import ShimmerButton from '../components/ShimmerButton.jsx';
 import AvatarCircles from '../components/AvatarCircles.jsx';
 import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
+import { HeroParallax } from '../components/ui/hero-parallax';
 
 function Graphics() {
+   
+  const products = [
+    {
+      title: "Moonbeam",
+      link: "/project/moonbeam",
+      thumbnail: "https://i.pinimg.com/474x/51/a7/c3/51a7c3da6375b096f7e10bbfbcaf7d48.jpg", // public path or import
+    },
+    {
+      title: "Appwrite",
+      link: "/project/appwrite",
+      thumbnail: "https://i.pinimg.com/474x/a7/1d/0d/a71d0d6f8b9bf7b6b9d7aa8ed7bffb07.jpg",
+    },
+    {
+      title: "Appwrite",
+      link: "/project/appwrite",
+      thumbnail: "https://i.pinimg.com/474x/7f/cd/76/7fcd7604b11afbcfec24351c05cde9d9.jpg",
+    },
+    {
+      title: "Appwrite",
+      link: "/project/appwrite",
+      thumbnail: "https://images.unsplash.com/photo-1742599968125-a790a680a605?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Appwrite",
+      link: "/project/appwrite",
+      thumbnail: "https://i.pinimg.com/474x/74/d8/82/74d882919b2130b786902aafb46de0cb.jpg",
+    },
+    {
+      title: "Appwrite",
+      link: "/project/appwrite",
+      thumbnail: "https://i.pinimg.com/474x/74/d8/82/74d882919b2130b786902aafb46de0cb.jpg",
+    },
+    {
+      title: "Appwrite",
+      link: "/project/appwrite",
+      thumbnail: "https://i.pinimg.com/474x/6a/16/30/6a16302758f56fec77ae8a25b73a3b85.jpg",
+    },
+    {
+      title: "Appwrite",
+      link: "/project/appwrite",
+      thumbnail: "https://i.pinimg.com/474x/07/3b/bc/073bbc49624153331216e6a12de9804b.jpg",
+    },
+    
+    // ...
+  ];
+   
+
+
+
+
+
+
   
     const avatars = [
           {
@@ -56,6 +109,9 @@ function Graphics() {
                     
           
         ];
+
+
+
       
       
       
@@ -116,6 +172,7 @@ function Graphics() {
   return (
     <>
     <div className='bg-black h-[7rem]'></div>
+    <div className=' w-[95%] xl:w-[70%] mx-auto ' > <HeroParallax products={products} />  </div>
     <div className='card-content-main  bg-black p-5   sm:p-0   '>
       
 

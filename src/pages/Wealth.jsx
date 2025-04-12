@@ -41,12 +41,13 @@ import ShimmerButton from '../components/ShimmerButton.jsx';
 import AvatarCircles from '../components/AvatarCircles.jsx';
 import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
+import s01 from '../assets/s01.png'
 
 function Wealth() {
 
     const avatars = [
         {
-            imageUrl: "https://media.licdn.com/dms/image/v2/D4D35AQH3ZE-ENLxrdw/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1713543665870?e=1737802800&v=beta&t=tvhtfWdtoF7n1spUDDOMsAsQ9sPp3pqkovHox9sPgUI",
+            imageUrl: s01,
             profileUrl: "/finance",
          },
          {

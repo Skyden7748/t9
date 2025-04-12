@@ -2,8 +2,7 @@
 import React from 'react'
 import './Profile.css'  
 import p1 from '../assets/p-1.jpg';
-import p3 from '../assets/p-3.jpg';
-
+import agap2 from '../assets/agap2.png'
 import { PhoneCallIcon ,  } from 'lucide-react'
 import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons'
 import { Progress } from './Progress';
@@ -22,9 +21,9 @@ import theartist01 from '../assets/theartist01.png';
 import chessensei_logo from '../assets/chessensei_logo.jpg';
 import ms_logo from '../assets/ms_logo.png';
 import fiverr from '../assets/fiverr.png';
-import theartist02 from '../assets/theartist02.png';
-import d01 from '../assets/d01.png';
-import d02 from '../assets/d02.jpg'
+import airbus from '../assets/airbus.png';
+import stefix from '../assets/stefix.webp'
+import shubham from '../assets/shubham.jpg'
 
 import {
    BellIcon,
@@ -41,28 +40,45 @@ import Examplee from './HoScroll2';
 
 
 
-function Abhisek() 
-{
+function Shubham() {
     const features = [
         {
                   
-                  name: "Sketches",
-                  description: "Created expressive sketches that translated client ideas into compelling visuals, laying the foundation for impactful and cohesive design solutions.",
+                  name: "logos",
+                  description: "Worked closely with clients to understand their vision and deliver logos that effectively communicate their values and mission.",
                   href: "/",
                   
-                  background: <img src={d01} className="absolute    opacity-30   " />,
+                  background: <img src={logoss} className="absolute -right-0 -top-10   md:right-10 md:-top-25 md:scale-[1.5]  md:-right-20 md:-top-25 opacity-20 bg-cover  " />,
                   className: "col-span-3 lg:col-span-1 h-[15rem] md:h-[30rem]",
                 },
                 {
                   
-                  name: "Advertising & Marketing Design",
-                  description: "Developed strategic advertising and marketing designs that effectively conveyed brand messages, engaging audiences through visually compelling and persuasive visuals. ",
+                  name: "Iconography",
+                  description: "for web and mobile interfaces, creating custom icons that align with brand identities and enhance user experience. ",
                   href: "/",
                   
-                  background: <img src={d02} className="absolute right-[-1000px] top-[-1000px] opacity-70 scale-[0.3]   " />,
+                  background: <img src={icono} className="absolute -right-[160px] -top-40 opacity-100 scale-[0.4]  " />,
                   className: "col-span-3 lg:col-span-2 h-[30rem]",
                 },
-                
+                {
+                  
+                  name: "UIUX / Frontend Development",
+                  description: "Led the end-to-end design process from user research, wireframing, prototyping, and usability testing, ensuring optimal user experiences.",
+                  href: "/",
+
+                  
+                  background: <img src={ilus} className="absolute -right-[130px] top-[-150px] opacity-100 blur-m bg-cover scale-[0.8]   " />,
+                  className: "col-span-3 lg:col-span-2 h-[20rem]",
+                },
+                {
+                  
+                  name: "Illustrations",
+                  description: "custom illustrations for various clients, including digital art, branding elements, web designs, and editorial pieces. ",
+                  href: "/",
+                  
+                  background: <img src={ilus2} className="absolute -right-[90px] sm:-right-[120px] -top-[200px] opacity-90  bg-cover scale-[0.7]   " />,
+                  className: "col-span-3 lg:col-span-1 h-[15rem] md:h-[30rem]",
+                },
                //  {
                //    Icon: CalendarIcon,
                //    name: "Maintenance and Support",
@@ -92,20 +108,20 @@ return (
                  <div className=' md:w-[95%] xl:w-[85%] w-[100%] block sm:flex  mx-auto block sm:flex  mb-5 justify-between ' >
  
                  <div className='sm:w-[58.3%] mb-5 sm:mb-0 w-[100%] flex [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] p-5 rounded-xl ' >
-                 <div   style={{ backgroundImage: `url(${p3})` }}   className=' bg-cover bg-center profile-pic h-[100px] w-[100px] rounded-full [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] '>
+                 <div   style={{ backgroundImage: `url(${shubham})` }}   className=' bg-cover bg-center profile-pic h-[100px] w-[100px] rounded-full [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] '>
  
                  </div>
                  
                  <div className='profile-name  self-center ml-5 '>
                      <h1 className='text-2xl font-semibold text-neutral-200 ' >
-                        Abhisek Swain
+                     Shubham Tripathi
                     </h1>
-                    <p className='text-neutral-400'>Designer</p>
+                    <p className='text-neutral-400'>MSc International Project Development</p>
                  </div>
                  </div>
                  <div className='sm:w-[40%]   w-[100%] [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] p-9 rounded-xl ]' >
                      <h1 className='text-xl font-semibold text-neutral-200   ' >socials</h1>
-                     <div className='flex mt-1 gap-1'>  <a href="https://twitter.com/" > <TwitterLogoIcon className='h-7 w-7 text-neutral-600'  /> </a>   <a href="https://www.instagram.com/skyden.psd"><InstagramLogoIcon className='h-7 w-7 text-neutral-600' /> </a>    <a href="https://www.linkedin.com/in/sarada-prasad-b56437267/"><LinkedInLogoIcon className='h-7 w-7 text-neutral-600' /> </a> </div>
+                     <div className='flex mt-1 gap-1'>        <a href="https://www.linkedin.com/in/shubham-tripathi94"><LinkedInLogoIcon className='h-7 w-7 text-neutral-600' /> </a> </div>
                  </div>
                  
  
@@ -113,7 +129,8 @@ return (
  
              <div className='profile-about md:w-[95%] xl:w-[85%] w-[100%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] rounded-xl p-10  ' >
                   <h1 className='text-2xl font-semibold text-neutral-200   ' >about</h1>
-                 <p className='text-neutral-400 [font-size:1.1rem]' >Passionate about design and development, I transform concepts into engaging, user-friendly interfaces. With a strong focus on detail and innovation, I craft solutions that not only look great but also enhance usability. Collaboration fuels my process, allowing me to adapt and deliver exceptional results.
+                 <p className='text-neutral-400 [font-size:1.1rem]' >Experienced mechanical engineer skilled in design, cost engineering, and project management. Adept at
+                 building strong supplier relationships, manage operational tasks and planning projects.
  
  </p>
   
@@ -175,12 +192,12 @@ return (
 
                                 
                           </div>
-                          <div style={{ backgroundImage: `url(${theartist02})` }}  className=' bg-cover bg-center md:w-[40%] w-[100%] mt-5 md:mt-0   [border:1px_solid_rgba(255,255,255,.1)] rounded-xl [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] p-10 flex items-end ' >
+                          <div style={{ backgroundImage: `url(${theartist01})` }}  className=' bg-cover bg-center md:w-[40%] w-[100%] mt-5 md:mt-0   [border:1px_solid_rgba(255,255,255,.1)] rounded-xl [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] p-10 flex items-end ' >
                                 
                                 <div className=' text-neutral-200  ' >
-                                <h1>Dynamic</h1>
-                                <h1>Inspiring</h1>
-                                <h1>Authentic</h1>
+                                <h1>Strategic</h1>
+                                <h1>Efficient</h1>
+                                <h1>Goal-Oriented</h1>
                                 </div>
 
                           </div>
@@ -225,19 +242,25 @@ Created an online portal to represent their brand.
                        <h1 className='text-2xl font-semibold text-neutral-200   ' >Work</h1>
                        
                  </div>
-                 <div className='sm:flex w-[100%] sm:w-[85%] gap-5  mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
-                    
-                 <div className='profile-work-1 w-[100%] sm:w-[30%]  mx-auto md:mx-0  [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5  rounded-xl ' >
-                       <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${ms_logo})` }} className='bg-cover bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
-         [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>Mainstay Abroad | Illustrator</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2  ' > Graphic Design, Illustration</p>
-                       <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >Aug 2024 - nov 2024</p> </div> </div>
+                 <div className='sm:flex w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
+                    <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
+                       <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${agap2})` }} className=' bg-cover bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
+         [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>AGAP 2  | Cherbourg, France </h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' > Project Engineer </p>
+                       <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >August 2024-present</p> </div> </div>
+                       
+                      
+                 </div>
+                 <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
+                       <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${airbus})` }} className='bg-cover bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
+         [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>AIRBUS  | Toulouse, France</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2  ' >Cost Engineer</p>
+                       <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >June 2023 - June 2024</p> </div> </div>
                        
                       
                  </div> 
-                 <div className=' mt-5 md:mt-0 profile-work-1 w-[100%] sm:w-[30%]  mx-auto md:mx-0  [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
-                       <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${fiverr})` }} className='bg-cover bg-center bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
-         [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>Freelance Work</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' > fine arts, graphic designer, digital art </p>
-                       <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >2023 - present</p> </div> </div>
+                 <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
+                       <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${stefix})` }} className='bg-cover bg-center bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
+         [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>STEPFIX | Brussels, Belgium</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' > Project Management Intern</p>
+                       <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >June 2022 - Nov 2022</p> </div> </div>
                        
                       
                  </div> 
@@ -270,15 +293,15 @@ Created an online portal to represent their brand.
  
          </div>
 
-         {/* <div className=' mt-5 w-[100%] md:w-[80%] mx-auto  ' >
+         <div className=' mt-5 w-[100%] md:w-[80%] mx-auto  ' >
             <Examplee/>
-         </div> */}
+         </div>
 
          <div className='h-[7rem] sm:h-[10rem] bg-black'></div>
  
  
      </div>   
-)
+    )
 }
 
-export default Abhisek
+export default Shubham

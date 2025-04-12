@@ -24,6 +24,7 @@ import ScrollToTop from './ScrollToTop.js';
 import Fguy from './components/Fguy.jsx';
 import FinanceGuys from './components/FinanceGuys.jsx';
 import MarketingGuys from './components/MarketingGuys.jsx';
+import Shubham from './components/Shubham.jsx';
 
 function App() {
   const homeRef = useRef(); // Create a reference
@@ -62,6 +63,7 @@ function App() {
         <Route path='/wealth' element={<Wealth/>}/>
         <Route path='/transform' element={<Transform/>}/>
         <Route path='/rikth' element = {<Fguy/>} />
+        <Route path='/shubham' element = {<Shubham/>}/>
         <Route path='/finance' element = {<FinanceGuys/>}/>
         <Route path='/marketingteam' element = {<MarketingGuys/>}/>
 

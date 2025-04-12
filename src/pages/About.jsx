@@ -30,6 +30,7 @@ import { Pagination,Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
+import { HeroParallax } from '../components/ui/hero-parallax'
 import Footer from '../components/Footer';
 import Test from './Test';
 import AnimatedShinyText from './AnimatedShinyText';
@@ -38,7 +39,12 @@ import { BentoGrid,BentoCard } from '../components/BentoGrid.jsx';
 import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
 import ScrollAnimationPage from '../components/ScrollAnimationPage';
+
 function About() {
+
+  
+  
+
   return (
 
     <>
