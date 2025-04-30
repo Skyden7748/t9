@@ -11,6 +11,7 @@ import pk3 from '../assets/pk3.png';
 import pk4 from '../assets/pk4.png';
 import pk5 from '../assets/pk5.png';
 import s01 from '../assets/s01.png';
+import Bcards from '../components/Bcards';
 
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import {motion} from 'motion/react'
@@ -32,6 +33,15 @@ import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
 
 function Projects() {
+
+
+  const items = [
+    { heading: '10+', text: 'clients and teams managed with clear, transparent communication.' },
+    { heading: 'Risk Management', text: 'Identified risks early and devised strategic mitigation plans.' },
+    { heading: '40+', text: 'professionals managed across projects, ensuring optimal allocation and performance.' },
+    { heading: '90%+', text: 'milestones met through task tracking and KPI monitoring.' },
+    { heading: 'Communication', text: 'Mitigated risks through proactive identification and strategic planning.' },
+  ];
 
      const avatars = [
                  {
@@ -103,11 +113,11 @@ function Projects() {
 
     <>
     <div className='bg-black h-[7rem]'></div>
-    <div className='card-content-main  bg-black p-5    sm:p-0   '>
+    <div className='card-content-main  bg-black p-5 mb-5    sm:p-0   '>
       
 
       <div className='card-content-01  mx-auto  w-[100%] sm:w-[90%] md:w-[90%]  lg:w-[90%] xl:w-[90%] 2xl:w-[70%] card-content-01  mx-auto  w-[100%] sm:w-[90%] md:w-[90%]  lg:w-[90%] xl:w-[90%] 2xl:w-[70%] '>
-          <div className='card-content-head text-white [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]  w-full grid place-items-center rounded-xl    md:p-20 p-5    '>
+          <div className='card-content-head text-white [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#6A4CFF80_inset]  w-full grid place-items-center rounded-xl    md:p-20 p-5    '>
              
 
               <h1 className='text-4xl font-medium text-poppins '>
@@ -117,7 +127,7 @@ function Projects() {
 
               </p> */}
 
-              <div className='sm:w-[70%] mt-3 sm:mt-3 2xl:mt-5 w-[100%] 2xl:w-[80%] sm:flex [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_40px_-20px_#ffffff1f_inset] p-3 rounded-lg  ' >
+              {/* <div className='sm:w-[70%] mt-3 sm:mt-3 2xl:mt-5 w-[100%] 2xl:w-[80%] sm:flex [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_40px_-20px_#ffffff1f_inset] p-3 rounded-lg  ' >
                 <div className='w-[100%] sm:w-[50%] flex sm:justify-center items-center ' >
                    <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[2em] 2xl:text-[3em] font-medium tracking-tighter text-neutral-400 dark:text-white' ><NumberTicker  value={4} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-400 dark:text-white" />   MNC s</p>
                 </div>
@@ -127,11 +137,11 @@ function Projects() {
                    <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[2.2em] 2xl:text-[3em] font-medium tracking-tighter text-neutral-100 dark:text-white' ><NumberTicker  value={20} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-400 dark:text-white" /><span className='text-neutral-400' >+ </span> Projects </p>
                 </div>
                
-              </div>
+              </div> */}
           </div>
           
 
-          <div className='card-content-body '>
+          {/* <div className='card-content-body '>
              <BentoGrid className="lg:grid-rows-3 mt-7">
               {features.map((feature) => (
               <BentoCard key={feature.name} {...feature} /> 
@@ -140,7 +150,7 @@ function Projects() {
               // 
     </BentoGrid>
    
-          </div>
+          </div> */}
 
 
       </div>
@@ -150,6 +160,15 @@ function Projects() {
 
 
     </div>
+    
+    {/* <div className='h-10 sm:h-20 bg-black' >
+    </div> */}
+
+    <div>
+        <Bcards  className=' text-white p-10 w-[90%] mx-auto mb-4 xl:w-[70%] [box-shadow:0_-20px_80px_-20px_#6A4CFF80_inset] [border:1px_solid_rgba(255,255,255,.1)]  rounded-xl ' items={items} />
+    </div>
+
+    
 
     <div className='card-content-main2  bg-black pl-5 pr-5 w-[100%]sm:p-0     '>
 

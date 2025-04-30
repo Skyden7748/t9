@@ -42,8 +42,17 @@ import AvatarCircles from '../components/AvatarCircles.jsx';
 import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
 import s01 from '../assets/s01.png'
+import Bcards from '../components/Bcards';
 
 function Wealth() {
+
+
+  const items = [
+    { heading: '₹50 crore+', text: 'AUM managed, guiding HNI clients in diversified investments based on their goals and risk appetite.' },
+    { heading: '₹2 crore+', text: 'of missold insurance products surrendered and tailored coverage provided for clients.' },
+    { heading: '₹1 crore+', text: 'portfolio managed with KYC and dematerialisation completed for multiple clients across listed companies. ' },
+    { heading: '40+', text: 'CFP® aspirants mentored in preparing comprehensive financial plans. ' },
+  ];
 
     const avatars = [
         {
@@ -62,8 +71,8 @@ function Wealth() {
           const features = [
                {
                         Icon: DoubleArrowUpIcon ,
-                        name: "Investment Planning and Goal Planning: :",
-                        description: "Assisted HNI clients to invest across multiple asset classes namely shares, mutual funds, fixed deposits and insurance as per client goals & risk appetite. Actively managing AUM > 50 crore rupees.",
+                        name: "₹50 crore+",
+                        description: "AUM managed, guiding HNI clients in diversified investments based on their goals and risk appetite.",
                         href: "/",
                         
                         background: <img src={wk1} className="absolute -right-20 -top-25 opacity-20 blur-m " />,
@@ -72,8 +81,8 @@ function Wealth() {
 
                       {
                         Icon: BackpackIcon,
-                        name: "Insurance Planning & Risk Management : ",
-                        description: "Adequate computation of insurance needs of clients & providing insurance coverage. Handholding and successfully surrendering > 2 crores rupees of insurance products missold to clients by various agents. ",
+                        name: "₹2 crore+ ",
+                        description: "of missold insurance products surrendered and tailored coverage provided for clients.",
                         href: "/",
                         
                         background: <img src={wk2} className="absolute -right-[130px] -top-20 opacity-20 scale-[0.7]  " />,
@@ -82,8 +91,8 @@ function Wealth() {
 
                       {
                         Icon: BorderStyleIcon,
-                        name: "Comprehensive Financial Plan Preparation :  ",
-                        description: "Mentored more than 40 Certified Financial Planner ( CFP®) certification course aspirants to prepare comprehensive financial plans.",
+                        name: "40+  ",
+                        description: "CFP® aspirants mentored in preparing comprehensive financial plans. ",
                         href: "/",
                         
                     background: <img src={wk3} className="absolute -right-[130px] top-[-150px] opacity-40 blur-m scale-[1] sm:scale-[0.5] " />,
@@ -94,9 +103,9 @@ function Wealth() {
 
                       {
                         Icon: RulerHorizontalIcon,
-                        name: "Physical Shares Conversion Services :",
+                        name: "₹1 crore+ :",
                         description:
-                          "Successfully processed KYC and dematerialisation of Physical share holding of multiple clients in various listed companies. Portfolio of > 1 crore rupees handled successfully.",
+                          "portfolio managed with KYC and dematerialisation completed for multiple clients across listed companies.",
                         href: "/",
                         
                         background: <img src={wk5} className="absolute -right-20 -top-20 opacity-20 scale-[0.8] " />,
@@ -111,7 +120,7 @@ function Wealth() {
       
 
       <div className='card-content-01  mx-auto  w-[100%] sm:w-[90%] md:w-[90%]  lg:w-[90%] xl:w-[90%] 2xl:w-[70%]'>
-          <div className='card-content-head text-white [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]  w-full grid place-items-center rounded-xl    md:p-20 p-5    '>
+          <div className='card-content-head text-white mb-5 [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#1E70FF70_inset]  w-full grid place-items-center rounded-xl    md:p-20 p-5    '>
              
 
               <h1 className='text-4xl font-medium text-poppins '>
@@ -121,23 +130,23 @@ function Wealth() {
 
               </p> */}
               
-              <div className='sm:w-[70%] mt-3 sm:mt-3 2xl:mt-5 w-[100%] 2xl:w-[80%] sm:flex [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_40px_-20px_#ffffff1f_inset] p-3 rounded-lg  ' >
+              {/* <div className='sm:w-[70%] mt-3 sm:mt-3 2xl:mt-5 w-[100%] 2xl:w-[80%] sm:flex [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_40px_-20px_#ffffff1f_inset] p-3 rounded-lg  ' >
                 <div className='w-[100%] sm:w-[50%] flex sm:justify-center items-center ' >
-                   <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[2em] 2xl:text-[3em] font-medium tracking-tighter text-neutral-400 dark:text-white' ><NumberTicker  value={25} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-400 dark:text-white" />+  Campaigns</p>
+                   <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[2em] 2xl:text-[3em] font-medium tracking-tighter text-neutral-400 dark:text-white' ><NumberTicker  value={50} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-400 dark:text-white" /> Crore + Assets Managed</p>
                 </div>
 
                 
                 <div className='w-[100%] sm:w-[50%] flex sm:justify-center items-center ' >
-                   <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[2.2em] 2xl:text-[3em] font-medium tracking-tighter text-neutral-100 dark:text-white' ><NumberTicker  value={90} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-400 dark:text-white" /><span className='text-neutral-400' >% </span> Success rate </p>
+                   <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[2.2em] 2xl:text-[3em] font-medium tracking-tighter text-neutral-100 dark:text-white' ><NumberTicker  value={90} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-400 dark:text-white" /><span className='text-neutral-400' >% </span> Satisfaction & Growth Rate </p>
                 </div>
                
-              </div>
+              </div> */}
                
 
           </div>
           
 
-          <div className='card-content-body mt-7  '>
+          {/* <div className='card-content-body mt-7  '>
              <BentoGrid className="lg:grid-rows-3">
               {features.map((feature) => (
               <BentoCard key={feature.name} {...feature} /> 
@@ -146,10 +155,15 @@ function Wealth() {
               // 
     </BentoGrid>
    
-          </div>
+          </div> */}
+            
 
 
       </div>
+      <div>
+     
+     <Bcards  className=' text-white p-10 w-[90%] mx-auto mb-4 xl:w-[70%] [box-shadow:0_-20px_80px_-20px_#1E70FF70_inset] [border:1px_solid_rgba(255,255,255,.1)]  rounded-xl ' items={items} />
+  </div>
 
 
 
@@ -188,6 +202,8 @@ function Wealth() {
     </div>
     <div className='h-10 sm:h-20 bg-black' >
     </div>
+
+  
     
     
     </>

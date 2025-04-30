@@ -59,7 +59,7 @@ function Marketing() {
                          {
                            Icon: InstagramLogoIcon,
                            name: "Social Media Marketing : ",
-                           description: "500+ high-quality content pieces across social media platforms to drive engagement and conversions.",
+                           description: "500+ high-quality social posts created to boost engagement and conversions.",
                            href: "/",
                            
                            background: <img src={mk2} className="absolute -right-[130px] -top-20 opacity-20 scale-[0.7]  " />,
