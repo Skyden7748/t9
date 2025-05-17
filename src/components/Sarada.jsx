@@ -109,7 +109,7 @@ function Sarada() {
             </div>
     
             <div className='profile-content   w-[100vw]  md:w-[100vw]   xl:w-[90vw] mx-auto  '>
-                <div className='sm:w-[85%] w-[95%]  mx-auto p-2 sm:p-5 rounded-tl-xl rounded-tr-xl [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] '>
+                <div className='sm:w-[85%] w-[95%]  mx-auto p-2 sm:p-5 rounded-tl-xl rounded-tr-xl '>
                     
                     <div className=' md:w-[95%] xl:w-[85%] w-[100%] block sm:flex  mx-auto block sm:flex  mb-5 justify-between ' >
     
@@ -134,17 +134,15 @@ function Sarada() {
                 </div>
     
                 <div className='profile-about md:w-[95%] xl:w-[85%] w-[100%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] rounded-xl p-10  ' >
-                     <h1 className='text-2xl font-semibold text-neutral-200   ' >about</h1>
-                    <p className='text-neutral-400 [font-size:1.1rem]' >I am a passionate professional with expertise in graphics design, UI/UX design, and front-end development. I craft visually appealing and user-friendly digital experiences with creativity and precision.
-    
-    Since 2021, I have honed my skills as a freelance designer, expanding into web development in 2023. I take pride in delivering quality results and thrive on collaboration.
-    
-    </p>
-     
+                     <h1 className='text-2xl font-semibold text-neutral-200 mb-2   ' >about</h1>
+                    <p className='text-neutral-400 [font-size:1.1rem] mb-[3px]  ' >Passionate professional with expertise in graphic design, UI/UX, and front-end development.   </p> 
+                   <p className='text-neutral-400 [font-size:1.1rem]  mb-[3px]' >Freelance designer since 2021, expanded into web development in 2023.</p> 
+                   <p className='text-neutral-400 [font-size:1.1rem]  mb-[3px]' >Create visually appealing, user-friendly digital experiences.</p>
+                   <p className='text-neutral-400 [font-size:1.1rem]  mb-[3px]'>Committed to quality and collaboration.</p>
                 </div>
                 </div>
 
-                <div className=' progress w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 ' >
+                <div className=' progress w-[100%] sm:w-[85%] mx-auto  p-5 ' >
                   
                    
                      <div className=' md:w-[95%] xl:w-[85%] w-[100%] p-10    mx-auto   mb-5 [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] rounded-xl ' >
@@ -162,9 +160,9 @@ function Sarada() {
                                       </div>
                                    </div>
                                    <div className='mt-4'>
-                                      <h2 className='text-lg font-semibold text-neutral-300   '  >Development <span className='font-[100]'>|</span> 50%</h2>
+                                      <h2 className='text-lg font-semibold text-neutral-300   '  >Development <span className='font-[100]'>|</span> 60%</h2>
                                       <div className='flex '>
-                                         <div className='w-[100%] flex' > <Progress  value={50}/>   </div>
+                                         <div className='w-[100%] flex' > <Progress  value={60}/>   </div>
                                          
                                          
                                       </div>
@@ -189,9 +187,9 @@ function Sarada() {
                                    </div>
 
                                    <div className='mt-4'>
-                                      <h2 className='text-lg font-semibold text-neutral-300   '  >Project Management <span className='font-[100]'>|</span> 60%</h2>
+                                      <h2 className='text-lg font-semibold text-neutral-300   '  >Project Management <span className='font-[100]'>|</span> 30%</h2>
                                       <div className='flex '>
-                                         <div className='w-[100%] flex' > <Progress  value={60}/>   </div>
+                                         <div className='w-[100%] flex' > <Progress  value={30}/>   </div>
                                          
                                          
                                       </div>
@@ -243,13 +241,13 @@ Created an online portal to represent their brand.
                     </div>
     
                 </div> */}
-                <div className='profile-work w:[100%] sm:w-[85%] mx-auto   [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 '>
+                <div className='profile-work w:[100%] sm:w-[85%] mx-auto    p-5 '>
                     
                     <div className='profile-work-1 w-[100%] sm:w-[85%] mx-auto    p-2' >
                           <h1 className='text-2xl font-semibold text-neutral-200   ' >Work</h1>
                           
                     </div>
-                    <div className='sm:flex w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
+                    <div className='sm:flex w-[100%] sm:w-[90%] mx-auto  p-0 rounded-xl ' >
                        <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                           <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${chessensei_logo})` }} className=' bg-cover bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
             [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>CHESSENSEI  | Front-End Developer</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' > Developer / Designer</p>
@@ -275,25 +273,20 @@ Created an online portal to represent their brand.
     
                 </div>
 
-                <div className='profile-work w:[90%] sm:w-[85%] mx-auto rounded-bl-xl rounded-br-xl  [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 md:pl-20  md:pr-20 pt-5 '>
+                {/* <div className='profile-work w:[90%] sm:w-[85%] mx-auto rounded-bl-xl rounded-br-xl   p-5 md:pl-20  md:pr-20 pt-5 '>
+                      <div className='w-[100%] sm:w-[95%] mx-auto mt-3  p-2 md:p-3 md:mt-5 rounded-xl '>
+                       <h1 className='text-2xl font-semibold text-neutral-200   ' >Projects</h1> </div>
                     
-                    {/* <div className='profile-work-1 w-[100%] sm:w-[85%] mx-auto    p-5 ' >
-                          <h1 className='text-2xl font-semibold text-neutral-200   ' >Work Experience</h1>
-                          
-                    </div> */}
-                    <div className='w-[100%] sm:w-[95%] mx-auto mt-3  p-2 md:p-3 md:mt-5 rounded-xl '>
-                    <h1 className='text-2xl font-semibold text-neutral-200   ' >Projects</h1> </div>
-                    
-                    <BentoGrid className="   ">
-              {features.map((feature) => (
-              <BentoCard key={feature.name} {...feature} /> 
-             ))}
+                             <BentoGrid className="   ">
+                                   {features.map((feature) => (
+                                  <BentoCard key={feature.name} {...feature} /> 
+                                  ))}
 
-              // 
-    </BentoGrid>
+              
+                             </BentoGrid>
                     
     
-                </div>
+                </div> */}
                 
     
     

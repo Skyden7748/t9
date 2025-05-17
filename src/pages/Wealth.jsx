@@ -43,6 +43,7 @@ import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
 import s01 from '../assets/s01.png'
 import Bcards from '../components/Bcards';
+import f01 from '../assets/f01.jpg'
 
 function Wealth() {
 
@@ -60,7 +61,7 @@ function Wealth() {
             profileUrl: "/finance",
          },
          {
-           imageUrl: "https://media.licdn.com/dms/image/v2/D4E03AQHyOOXRcJ-S4A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711106313269?e=1742428800&v=beta&t=QSbOhRgqZ7kpyQW6Lul3N3LaE--CW5ymTu86SnyV-SI",
+           imageUrl: f01,
            profileUrl: "/finance",
          },
           
@@ -187,7 +188,7 @@ function Wealth() {
           </div>
           <div className="ccc mt-3 sm:mt-0  sm:block pl-10  sm:pl-6 w-[100%] sm:w-[50%] border-right border-neutral-600 ">
              <p className='text-xl mb-3 font-sm text-poppins text-neutral-300' >or, get in touch </p>
-             <Link to="/contact" ><ShimmerButton >contact</ShimmerButton></Link>
+             <Link className='no-underline' to="/contact" ><ShimmerButton >contact</ShimmerButton></Link>
 
              
           </div>

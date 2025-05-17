@@ -39,7 +39,7 @@ import { BentoGrid,BentoCard } from '../components/BentoGrid.jsx';
 import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
 import ScrollAnimationPage from '../components/ScrollAnimationPage';
-
+import { SelectDemo } from '../components/SelectButton'
 function About() {
 
   
@@ -207,6 +207,7 @@ d="M33.0443 3.6335C29.6706 3.70847 26.1625 3.93814 22.823 4.43087C17.4921 5.2174
   </div>
       
   </div>
+  
 
     
    

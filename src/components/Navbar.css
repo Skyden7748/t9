@@ -9,7 +9,13 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
-  
+  .goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
+}
   .navbar-container {
     max-width: 1380px;
     margin: 0 auto;

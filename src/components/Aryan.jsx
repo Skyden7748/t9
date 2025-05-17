@@ -3,6 +3,8 @@ import React from 'react'
 import './Profile.css'  
 import p1 from '../assets/p-1.jpg';
 import p4 from '../assets/p-4.jpg'
+import { Progress } from './Progress';
+import thedev01 from '../assets/thedev01.png';
 
 import { PhoneCallIcon ,  } from 'lucide-react'
 import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons'
@@ -16,7 +18,7 @@ function Aryan() {
                 </div>
         
                 <div className='profile-content   w-[100vw]  sm:w-[1344px] mx-auto  '>
-                    <div className='sm:w-[85%] w-[95%]  mx-auto p-2 sm:p-5 rounded-tl-xl rounded-tr-xl [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] '>
+                    <div className='sm:w-[85%] w-[95%]  mx-auto p-2 sm:p-5 rounded-tl-xl rounded-tr-xl  '>
                         
                         <div className=' sm:w-[85%] w-[100%] block sm:flex  mx-auto block sm:flex  mb-5 justify-between ' >
         
@@ -41,46 +43,113 @@ function Aryan() {
                     </div>
         
                     <div className='profile-about w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] rounded-xl p-10  ' >
-                         <h1 className='text-2xl font-semibold text-neutral-200   ' >about</h1>
-                        <p className='text-neutral-400 [font-size:1.1rem]' >I am a passionate developer with expertise in front-end and back-end development, mobile app development for Android and iOS, as well as AI and machine learning. I specialize in delivering scalable, efficient, and user-friendly solutions, leveraging innovation and collaboration to achieve impactful results.
-        
-        </p>
+                         <h1 className='text-2xl font-semibold text-neutral-200 mb-2' >about</h1>
+                        <p className='text-neutral-400 [font-size:1.1rem] mb-[3px]' >Passionate full-stack and mobile app developer (Android & iOS)</p>
+                        <p className='text-neutral-400 [font-size:1.1rem] mb-[3px]' >Skilled in front-end and back-end development</p>
+                        <p className='text-neutral-400 [font-size:1.1rem] mb-[3px]' >Deliver scalable, efficient, and user-friendly solutions</p>
+                        <p className='text-neutral-400 [font-size:1.1rem] mb-[3px]' >Leverage innovation and teamwork for impactful results</p>
          
                     </div>
                     </div>
+
+
+
+
+
+
+
+                     <div className=' progress w-[100%] sm:w-[85%] mx-auto  p-5 ' >
+                                   
+                                    
+                                      <div className=' md:w-[95%] xl:w-[85%] w-[100%] p-10    mx-auto   mb-5 [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] rounded-xl ' >
+                     
+                                      <h1 className='text-2xl font-semibold text-neutral-200   ' >Stats</h1>
+                                      <div className='md:flex w-[100%] pt-2 justify-between gap-3  '  >
+                                              <div className='md:w-[60%] w-[100%] p-2 sm:p-5   [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-lg  '  >
+                                                    
+                                                    <div className='mt-0'>
+                                                       <h2 className='text-lg font-semibold text-neutral-300   '  >Design <span className='font-[100]'>|</span> 10%</h2>
+                                                       <div className='flex mt-0'>
+                                                          <div className='w-[100%] flex' > <Progress  value={10}/>   </div>
+                                                          
+                                                          
+                                                       </div>
+                                                    </div>
+                                                    <div className='mt-4'>
+                                                       <h2 className='text-lg font-semibold text-neutral-300   '  >Development <span className='font-[100]'>|</span> 90%</h2>
+                                                       <div className='flex '>
+                                                          <div className='w-[100%] flex' > <Progress  value={90}/>   </div>
+                                                          
+                                                          
+                                                       </div>
+                                                    </div>
+                    
+                                                    <div className='mt-4'>
+                                                       <h2 className='text-lg font-semibold text-neutral-300   '  >UI/UX <span className='font-[100]'>|</span> 40%</h2>
+                                                       <div className='flex '>
+                                                          <div className='w-[100%] flex' > <Progress  value={40}/>   </div>
+                                                          
+                                                          
+                                                       </div>
+                                                    </div>
+                    
+                                                    <div className='mt-4'>
+                                                       <h2 className='text-lg font-semibold text-neutral-300   '  >AI <span className='font-[100]'>|</span> 60%</h2>
+                                                       <div className='flex '>
+                                                          <div className='w-[100%] flex' > <Progress  value={60}/>   </div>
+                                                          
+                                                          
+                                                       </div>
+                                                    </div>
+                    
+                                                    <div className='mt-4'>
+                                                       <h2 className='text-lg font-semibold text-neutral-300   '  >Project Management <span className='font-[100]'>|</span> 20%</h2>
+                                                       <div className='flex '>
+                                                          <div className='w-[100%] flex' > <Progress  value={20}/>   </div>
+                                                          
+                                                          
+                                                       </div>
+                                                    </div>
+                    
+                                                    
+                                              </div>
+                                              <div style={{ backgroundImage: `url(${thedev01})` }}  className=' bg-cover bg-center md:w-[40%] w-[100%] mt-5 md:mt-0   [border:1px_solid_rgba(255,255,255,.1)] rounded-xl [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] p-10 flex items-end ' >
+                                                    
+                                                    <div className=' text-white  ' >
+                                                    <h1>Analytical</h1>
+                                                    <h1>Ingenious</h1>
+                                                    <h1>Precise</h1>
+                                                    </div>
+                    
+                                              </div>
+                                              </div>
+                     
+                    
+                                      </div>
+                                    
+                    
+                                 </div>
         
-                    <div className='profile-work w:[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 '>
+                    <div className='profile-work w:[100%] sm:w-[85%] mx-auto  p-5 '>
                         
                         <div className='profile-work-1 w-[100%] sm:w-[85%] mx-auto   p-5 ' >
-                              <h1 className='text-2xl font-semibold text-neutral-200   ' >Work Experience</h1>
+                              <h1 className='text-2xl font-semibold text-neutral-200   ' >Project Work</h1>
                               
                         </div> 
                         <div className='profile-work-1 w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                               <h1 className='text-2xl font-semibold text-neutral-200 mb-2   ' >CollabCanvas</h1>
-                              <p className='text-neutral-400 [font-size:1.1rem]' >CollabCanvas is a real-time collaborative drawing and brainstorming web application
-built using Next.js, TypeScript, and WebSockets. It enables multiple users to interact
-seamlessly on a shared canvas with low-latency updates, making it ideal for team
-collaboration and creative workflows. The application features a user-friendly interface for
-drawing and annotating in real time, with TypeScript ensuring type safety and maintainable
-code. CollabCanvas delivers a smooth, responsive experience across various user
-environments.
-    interface.
+                              <p className='text-neutral-400 [font-size:1.1rem]' >a real-time collaborative canvas built with Next.js, TypeScript, and WebSockets for seamless, low-latency team drawing and brainstorming.
     </p>
      <a href="https://github.com/aryanbroy/next_crawler_v2">git repository</a>
                         </div>
                         <div className='profile-work-2 w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 mt-5 rounded-xl' >
                               <h1 className='text-2xl font-semibold text-neutral-200 mb-2   '  >Imagenary AI</h1>
-                              <p className='text-neutral-400 [font-size:1.1rem]' >Developed a web application using Next.js, Cloudinary, Clerk for authentication, and
-Prisma ORM with PostgreSQL to manage user and media data. The platform allows users
-to upload images, videos, and custom thumbnail images, with an option to select different
-aspect ratios. Integrated AI technology crops thumbnails while retaining key content and
-compresses image sizes for optimized download. Users can post videos and share them
-with others for public access and download.
+                              <p className='text-neutral-400 [font-size:1.1rem]' >Built a media-sharing app with Next.js, Clerk auth, Cloudinary, Prisma, and PostgreSQL. Users upload images/videos with custom thumbnails and aspect ratios. AI-powered cropping and compression optimize content. Supports public posting and downloads.
     </p>
     <a href="https://github.com/aryanbroy/imagenary/tree/main">git repository</a>
         
                         </div>
-                        <div className='profile-work-2 w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 mt-5 rounded-xl' >
+                        {/* <div className='profile-work-2 w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 mt-5 rounded-xl' >
                               <h1 className='text-2xl font-semibold text-neutral-200  mb-2  ' >Youtube Playlist Crawler</h1>
                               <p    className='text-neutral-400 [font-size:1.1rem]' >Built a web crawler using Next.js, TypeScript, Crawlee, and Playwright Crawler to extract
 and analyze video statistics (e.g., views) from YouTube playlists. Integrated Recharts to
@@ -88,28 +157,28 @@ visually represent the data through dynamic graphs, providing clear insights int
 performance trends.</p>
 <a href="https://github.com/aryanbroy/next_crawler_v2">git repository</a>
         
-                        </div>
+                        </div> */}
         
                     </div>
-                    <div className='profile-work w:[100%] sm:w-[85%] mx-auto rounded-bl-xl rounded-br-xl  [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 '>
+                    <div className='profile-work w:[100%] sm:w-[85%] mx-auto rounded-bl-xl rounded-br-xl   p-5 '>
                         
                         <div className='profile-work-1 w-[100%] sm:w-[85%] mx-auto    p-5 ' >
-                              <h1 className='text-2xl font-semibold text-neutral-200   ' >Key Attributes</h1>
+                              <h1 className='text-2xl font-semibold text-neutral-200   ' >Core Skills</h1>
                               
                         </div>
                         <div className='sm:flex w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                            <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                               <h1 className='text-2xl font-semibold text-neutral-200   ' >Full-Stack</h1>
-                              <p className='text-neutral-400 [font-size:1.1rem] mt-1 ' >I build scalable, efficient, and robust applications with a seamless integration of front-end and back-end technologies.</p>
+                              <p className='text-neutral-400 [font-size:1.1rem] mt-1 ' > Building scalable, efficient, and robust apps with seamless front- and back-end integration.</p>
                         </div>
                         <div className='profile-work-2 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 mt-5 sm:mt-0 rounded-xl' >
                               <h1 className='text-2xl font-semibold text-neutral-200   '  >Mobile App Developer</h1>
-                              <p className='text-neutral-400 [font-size:1.1rem] mt-1 ' >I create responsive, user-focused mobile apps for Android and iOS, ensuring smooth functionality and modern design.</p>
+                              <p className='text-neutral-400 [font-size:1.1rem] mt-1 ' >Craft responsive, user-centric Android and iOS apps with smooth performance and modern design.</p>
         
                         </div>
                         <div className='profile-work-2 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 mt-5 sm:mt-0 rounded-xl' >
                               <h1 className='text-2xl font-semibold text-neutral-200   ' >AI/ML</h1>
-                              <p    className='text-neutral-400 [font-size:1.1rem] mt-1'  >I develop intelligent solutions by leveraging machine learning and artificial intelligence to optimize processes and enhance innovation.</p>
+                              <p    className='text-neutral-400 [font-size:1.1rem] mt-1'  >Developing smart solutions using ML and AI to optimize processes and drive innovation.</p>
           
                         </div>
                         </div>

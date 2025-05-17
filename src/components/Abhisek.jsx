@@ -87,7 +87,7 @@ return (
          </div>
  
          <div className='profile-content   w-[100vw]  md:w-[100vw]   xl:w-[90vw] mx-auto  '>
-             <div className='sm:w-[85%] w-[95%]  mx-auto p-2 sm:p-5 rounded-tl-xl rounded-tr-xl [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] '>
+             <div className='sm:w-[85%] w-[95%]  mx-auto p-2 sm:p-5 rounded-tl-xl rounded-tr-xl  '>
                  
                  <div className=' md:w-[95%] xl:w-[85%] w-[100%] block sm:flex  mx-auto block sm:flex  mb-5 justify-between ' >
  
@@ -112,15 +112,16 @@ return (
              </div>
  
              <div className='profile-about md:w-[95%] xl:w-[85%] w-[100%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] rounded-xl p-10  ' >
-                  <h1 className='text-2xl font-semibold text-neutral-200   ' >about</h1>
-                 <p className='text-neutral-400 [font-size:1.1rem]' >Passionate about design and development, I transform concepts into engaging, user-friendly interfaces. With a strong focus on detail and innovation, I craft solutions that not only look great but also enhance usability. Collaboration fuels my process, allowing me to adapt and deliver exceptional results.
- 
- </p>
+                  <h1 className='text-2xl font-semibold text-neutral-200 mb-2   ' >about</h1>
+                 <p className='text-neutral-400 [font-size:1.1rem mb-[3px] ]' >Crafting visually appealing and functional solution.</p>
+                   <p className='text-neutral-400 [font-size:1.1rem mb-[3px]]' >Focused on detail, innovation, and usability.</p>
+                   <p className='text-neutral-400 [font-size:1.1rem mb-[3px]]' >Transforming concepts into engaging, user-friendly interfaces.</p>
+                   
   
              </div>
              </div>
 
-             <div className=' progress w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 ' >
+             <div className=' progress w-[100%] sm:w-[85%] mx-auto  p-5 ' >
                
                 
                   <div className=' md:w-[95%] xl:w-[85%] w-[100%] p-10    mx-auto   mb-5 [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] rounded-xl ' >
@@ -130,15 +131,33 @@ return (
                           <div className='md:w-[60%] w-[100%] p-2 sm:p-5   [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-lg  '  >
                                 
                                 <div className='mt-0'>
-                                   <h2 className='text-lg font-semibold text-neutral-300   '  >Design <span className='font-[100]'>|</span> 90%</h2>
+                                   <h2 className='text-lg font-semibold text-neutral-300   '  >Design <span className='font-[100]'>|</span> 95%</h2>
                                    <div className='flex mt-0'>
-                                      <div className='w-[100%] flex' > <Progress  value={90}/>   </div>
+                                      <div className='w-[100%] flex' > <Progress  value={95}/>   </div>
                                       
                                       
                                    </div>
                                 </div>
                                 <div className='mt-4'>
-                                   <h2 className='text-lg font-semibold text-neutral-300   '  >Development <span className='font-[100]'>|</span> 50%</h2>
+                                   <h2 className='text-lg font-semibold text-neutral-300   '  >Development <span className='font-[100]'>|</span> 30%</h2>
+                                   <div className='flex '>
+                                      <div className='w-[100%] flex' > <Progress  value={30}/>   </div>
+                                      
+                                      
+                                   </div>
+                                </div>
+
+                                <div className='mt-4'>
+                                   <h2 className='text-lg font-semibold text-neutral-300   '  >User Experience <span className='font-[100]'>|</span> 60%</h2>
+                                   <div className='flex '>
+                                      <div className='w-[100%] flex' > <Progress  value={60}/>   </div>
+                                      
+                                      
+                                   </div>
+                                </div>
+
+                                <div className='mt-4'>
+                                   <h2 className='text-lg font-semibold text-neutral-300   '  >User Research <span className='font-[100]'>|</span> 50%</h2>
                                    <div className='flex '>
                                       <div className='w-[100%] flex' > <Progress  value={50}/>   </div>
                                       
@@ -147,27 +166,9 @@ return (
                                 </div>
 
                                 <div className='mt-4'>
-                                   <h2 className='text-lg font-semibold text-neutral-300   '  >User Experience <span className='font-[100]'>|</span> 80%</h2>
+                                   <h2 className='text-lg font-semibold text-neutral-300   '  >Project Management <span className='font-[100]'>|</span> 20%</h2>
                                    <div className='flex '>
-                                      <div className='w-[100%] flex' > <Progress  value={80}/>   </div>
-                                      
-                                      
-                                   </div>
-                                </div>
-
-                                <div className='mt-4'>
-                                   <h2 className='text-lg font-semibold text-neutral-300   '  >User Research <span className='font-[100]'>|</span> 70%</h2>
-                                   <div className='flex '>
-                                      <div className='w-[100%] flex' > <Progress  value={70}/>   </div>
-                                      
-                                      
-                                   </div>
-                                </div>
-
-                                <div className='mt-4'>
-                                   <h2 className='text-lg font-semibold text-neutral-300   '  >Project Management <span className='font-[100]'>|</span> 60%</h2>
-                                   <div className='flex '>
-                                      <div className='w-[100%] flex' > <Progress  value={60}/>   </div>
+                                      <div className='w-[100%] flex' > <Progress  value={20}/>   </div>
                                       
                                       
                                    </div>
@@ -219,13 +220,13 @@ Created an online portal to represent their brand.
                  </div>
  
              </div> */}
-             <div className='profile-work w:[100%] sm:w-[85%] mx-auto   [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 '>
+             <div className='profile-work w:[100%] sm:w-[85%] mx-auto   p-5 '>
                  
                  <div className='profile-work-1 w-[100%] sm:w-[85%] mx-auto    p-2' >
                        <h1 className='text-2xl font-semibold text-neutral-200   ' >Work</h1>
                        
                  </div>
-                 <div className='sm:flex w-[100%] sm:w-[85%] gap-5  mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
+                 <div className='sm:flex w-[100%] sm:w-[90%] gap-5  mx-auto  p-5 rounded-xl ' >
                     
                  <div className='profile-work-1 w-[100%] sm:w-[30%]  mx-auto md:mx-0  [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5  rounded-xl ' >
                        <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${ms_logo})` }} className='bg-cover bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
@@ -245,7 +246,7 @@ Created an online portal to represent their brand.
  
              </div>
 
-             <div className='profile-work w:[90%] sm:w-[85%] mx-auto rounded-bl-xl rounded-br-xl  [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 md:pl-20  md:pr-20 pt-5 '>
+             <div className='profile-work w:[90%] sm:w-[85%] mx-auto rounded-bl-xl rounded-br-xl  p-5 md:pl-20  md:pr-20 pt-5 '>
                  
                  {/* <div className='profile-work-1 w-[100%] sm:w-[85%] mx-auto    p-5 ' >
                        <h1 className='text-2xl font-semibold text-neutral-200   ' >Work Experience</h1>

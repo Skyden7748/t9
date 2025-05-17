@@ -4,6 +4,7 @@ import {motion, useTransform , useScroll } from 'motion/react'
 import a1 from '../assets/a1.png'
 import a2 from '../assets/a2.png'
 import a3 from '../assets/a3.png'
+import { useTranslation } from 'react-i18next';
 
 import { Swiper, SwiperSlide ,  } from "swiper/react";
 import { Pagination,Autoplay } from "swiper/modules";
@@ -11,17 +12,21 @@ import "swiper/css";
 import '../pages/Home.css'
 import { Link } from 'react-router-dom';
 
+
+
+
 export const TestParallax = () =>{
+    const { t } = useTranslation()
     return <div className='bg-black ' >
       
       <Parallax
        imgUrl= {a1}
-       subheading=" Who We Are "
-       heading="Innovating the Future, One Experience at a Time"
+       subheading={t("H_Greet1")}
+       heading={t("H_Greet12")}
        > <ExampleContent
-       main=" Our initiative is built on the belief that technology should not just work, but inspire. "
-       sub=" At Tribe-9, we are a team of designers, engineers, and visionaries passionate about creating transformative digital experiences. "
-       sub2=" Our mission is to craft bespoke solutions that empower businesses and redefine how users interact with technology. By blending creativity, innovation, and a user-first approach, we turn ideas into impactful realities. "
+       main= {t("H_Sen1")}
+       sub= {t("H_Sen12")} 
+       sub2= {t("H_sen123")}
        >
           
           </ExampleContent>
@@ -29,13 +34,13 @@ export const TestParallax = () =>{
          </Parallax>
          <Parallax
        imgUrl={a2}
-       subheading=" Why This Initiative? "
-       heading="Bridging the Gap Between Vision and Reality"
+       subheading={t("H_Greet2")}
+       heading={t("H_Greet22")}
        > 
         <ExampleContent
-          main=" By blending creativity, innovation, and a user-first approach, we turn ideas into impactful realities. "
-          sub=" In a world where digital transformation is essential, many businesses struggle with engagement, accessibility, and seamless functionality. "
-          sub2=" At Tribe-9, we saw the need for solutions that go beyond aesthetics—solutions that enhance usability, drive trust, and foster connections. "
+        main={t("H_Sen2")}
+          sub={t("H_Sen22")}
+          sub2={t("H_Sen23")}
           >
              
              </ExampleContent>
@@ -43,8 +48,8 @@ export const TestParallax = () =>{
          </Parallax>
          <Parallax
        imgUrl={a3}
-       subheading=" The Impact We Want to Create "
-       heading="Empowering Businesses, Elevating Experiences"
+       subheading={t("H_Greeet3")}
+       heading={t("H_Greeet32")}
        > 
 
          {/* <div className=' w-[90%] relative mx-auto overflow-hidden' style={{

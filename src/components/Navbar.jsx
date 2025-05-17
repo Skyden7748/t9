@@ -7,6 +7,8 @@ import Menu from '@mui/material/Menu';
 
 import MenuItem from '@mui/material/MenuItem';
 import { useLocation } from "react-router-dom";
+import { Select } from '@mui/material';
+import { SelectDemo } from './SelectButton';
 
 const Navbar = () => {
 
@@ -77,8 +79,12 @@ const Navbar = () => {
               <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>
                 About
               </Link>
+
+              
+
               
               <div>
+                
       <Button
         id="basic-button"
         aria-controls={open ? 'basic-menu' : undefined}
@@ -125,8 +131,10 @@ const Navbar = () => {
               <Link to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>
                 Contact
               </Link>
+              <SelectDemo />
             </div>
           </div>
+          
         </div>
       </div>
     </nav>

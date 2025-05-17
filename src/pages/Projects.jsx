@@ -31,6 +31,7 @@ import ShimmerButton from '../components/ShimmerButton.jsx';
 import AvatarCircles from '../components/AvatarCircles.jsx';
 import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
+import shubham from '../assets/shubham.jpg'
 
 function Projects() {
 
@@ -49,7 +50,7 @@ function Projects() {
                     profileUrl: "/finance",
                  },
                  {
-                   imageUrl: "https://media.licdn.com/dms/image/v2/D4E03AQHyOOXRcJ-S4A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711106313269?e=1742428800&v=beta&t=QSbOhRgqZ7kpyQW6Lul3N3LaE--CW5ymTu86SnyV-SI",
+                   imageUrl: shubham,
                    profileUrl: "/finance",
                  },
                  
@@ -186,7 +187,7 @@ function Projects() {
           </div>
           <div className="ccc mt-3 sm:mt-0  sm:block pl-10  sm:pl-6 w-[100%] sm:w-[50%] border-right border-neutral-600 ">
              <p className='text-xl mb-3 font-sm text-poppins text-neutral-300' >or, get in touch </p>
-             <Link to="/contact" ><ShimmerButton >contact</ShimmerButton></Link>
+             <Link className='no-underline' to="/contact" ><ShimmerButton >contact</ShimmerButton></Link>
 
              
           </div>

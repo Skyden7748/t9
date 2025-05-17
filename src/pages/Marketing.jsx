@@ -164,7 +164,7 @@ function Marketing() {
           </div>
           <div className="ccc mt-3 sm:mt-0  sm:block pl-10  sm:pl-6 w-[100%] sm:w-[50%] border-right border-neutral-600 ">
              <p className='text-xl mb-3 font-sm text-poppins text-neutral-300' >or, get in touch </p>
-             <Link to="/contact" ><ShimmerButton >contact</ShimmerButton></Link>
+             <Link className='no-underline'  to="/contact" ><ShimmerButton  >contact</ShimmerButton></Link>
 
              
           </div>

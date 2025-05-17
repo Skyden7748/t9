@@ -37,15 +37,17 @@ import AvatarCircles from '../components/AvatarCircles.jsx';
 import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
 import Example from '../components/HoScroll';
+import p_1 from '../assets/p-1.jpg';
+import p_3 from '../assets/p-3.jpg';
 
 function Uiux() {
   const avatars = [
     {
-        imageUrl: "https://media.licdn.com/dms/image/v2/D4D03AQHjC-DFIokdqw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722532581137?e=1742428800&v=beta&t=dqIRFpM-xZ2UbCJunH0OtnJy8UjhTF68zDwNi5B1Y_U",
+        imageUrl: p_1,
         profileUrl: "/design",
       },
       {
-        imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQEiZ4CNk_ejNA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729790721710?e=1742428800&v=beta&t=Dd-aKmeK-69nY0RMwGxqi8v6v9ZGgsWDRhW5q18HTKo",
+        imageUrl: p_3,
         profileUrl: "/design",
       },
     ];
@@ -173,7 +175,7 @@ function Uiux() {
           </div>
           <div className="ccc mt-3 sm:mt-0  sm:block pl-10  sm:pl-6 w-[100%] sm:w-[50%] border-right border-neutral-600 ">
              <p className='text-xl mb-3 font-sm text-poppins text-neutral-300' >or, get in touch </p>
-             <Link to="/contact" ><ShimmerButton >contact</ShimmerButton></Link>
+             <Link className='no-underline' to="/contact" ><ShimmerButton >contact</ShimmerButton></Link>
 
              
           </div>

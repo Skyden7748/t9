@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './Home.css'
 import heroImage from '../assets/hero90-blured3.png';
 import flare from '../assets/flare1.png';
@@ -15,6 +15,7 @@ import  { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide ,  } from "swiper/react";
 import { Pagination,Autoplay } from "swiper/modules";
+import { useTranslation } from 'react-i18next';
 
 
 // Import Swiper styles
@@ -28,6 +29,8 @@ import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
 import ScrollAnimationPage from '../components/ScrollAnimationPage';
 import { TestParallax } from '../components/Parallax';
+
+
 // import { HomeIcon, InfoIcon, SearchIcon } from "@radix-ui/react-icons";
 
 
@@ -45,13 +48,17 @@ const beams = [
 
 
 function home() {
+  const { t } = useTranslation()
+  
   return (
     <>
     <div className='' >
     <TestParallax/>
     
-  
+    <div className='  w-full xl:w-[85%] mx-auto mt-20 ' > <h1 className='text-center text-5xl font-semibold text-neutral-200'>{t("H_Greet4")}</h1> </div>
   <div className='home-main-four pb-20 w-full xl:w-full overflow-hidden'>
+
+    
      <div className='home-four-content'>
       {/* <h1>We Expertise in-</h1> */}
       <div className='swiper-container'>
@@ -73,7 +80,7 @@ function home() {
           <Link to='/software' className=' no-underline '>
            <div className='swiper-slide [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]'>
                <div className='swiper-slide-top'>
-                <p>Software Development</p>
+                <p>{t("feature1")}</p>
                </div>
                <div className='swiper-slide-bottom b1'></div>
 
@@ -84,7 +91,7 @@ function home() {
           <Link to='/UIUX' className=' no-underline '>
           <div className='swiper-slide [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]'>
             <div className='swiper-slide-top '>
-              <p>UI/UX</p>
+              <p>  {t("feature2")} </p>
             </div>
             <div className='swiper-slide-bottom b2'></div>
           </div> 
@@ -94,7 +101,7 @@ function home() {
           <Link to='/graphics' className=' no-underline ' >
           <div className='swiper-slide [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]'>
           <div className='swiper-slide-top'>
-            <p>Graphics Design</p>
+            <p>  {t("feature3")} </p>
           </div>
                <div className='swiper-slide-bottom b3'></div>  
             
@@ -105,7 +112,7 @@ function home() {
           <Link to='/marketing'  className=' no-underline '  >
           <div className='swiper-slide [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]'>
             <div className='swiper-slide-top'>
-            <p>Digital Marketing</p>
+            <p>  {t("feature4")} </p>
             </div>
             <div className='swiper-slide-bottom b4'></div>
           </div> 
@@ -116,7 +123,7 @@ function home() {
            <div className='swiper-slide [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]'>
             
              <div className='swiper-slide-top'>
-             <p>Project Management</p>
+             <p>  {t("feature5")} </p>
              </div>
              <div className='swiper-slide-bottom b5'></div>
            </div> 
@@ -126,14 +133,14 @@ function home() {
           <Link to='/wealth' className='no-underline ' >
           <div className='swiper-slide [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]'>
             <div className='swiper-slide-top'>
-            <p>Wealth Management</p>
+            <p>  {t("feature6")} </p>
             </div>
             <div className='swiper-slide-bottom b6'></div>  
             
           </div> 
           </Link>
         </SwiperSlide>
-        <SwiperSlide> 
+        {/* <SwiperSlide> 
           <Link to='/transform' className='no-underline ' >
           <div className='swiper-slide [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]'>
             <div className='swiper-slide-top'>
@@ -142,7 +149,7 @@ function home() {
             <div className='swiper-slide-bottom b7'></div>  
           </div> 
           </Link>
-        </SwiperSlide>
+        </SwiperSlide> */}
         {/* <SwiperSlide> 
           <div className='swiper-slide'>
             
