@@ -63,7 +63,7 @@ function Projects() {
                       {
                                Icon: Link2Icon ,
                                name: "Team Management :",
-                               description: "Efficiently managed a resource pool of over 40 professionals across multiple projects, ensuring optimal allocation and performance",
+                               description: "40+ professionals managed across projects, ensuring optimal allocation and performance.",
                                href: "/",
                                
                                background: <img src={pk1} className="absolute -right-20 -top-25 opacity-20 blur-m " />,
@@ -72,7 +72,7 @@ function Projects() {
                              {
                                Icon: TimerIcon,
                                name: "Project Planning : ",
-                               description: "Fostered clear and transparent communication with 10+ clients and project teams.",
+                               description: "10+ clients and teams managed with clear, transparent communication.",
                                href: "/",
                                
                                background: <img src={pk2} className="absolute -right-[130px] -top-20 opacity-20 scale-[0.7]  " />,
@@ -81,7 +81,7 @@ function Projects() {
                              {
                                Icon: Crosshair1Icon,
                                name: "Communication :",   
-                               description: " Proactively identified potential risks and developed strategic mitigation plans to minimize impact.",
+                               description: " Mitigated risks through proactive identification and strategic planning.",
                                href: "/",
                                
                            background: <img src={pk3} className="absolute -right-[130px] top-[-150px] opacity-40 blur-m scale-[1] sm:scale-[0.5] " />,
@@ -100,7 +100,7 @@ function Projects() {
                                Icon: EnterIcon,
                                name: "Progress tracking :",
                                description:
-                                 "Tracked project tasks and milestones to ensure timely completion, while developing KPIs to monitor schedule and budget variances.Over 90% milestones decided achieved ",
+                                 "90%+ milestones met through task tracking and KPI monitoring.",
                                href: "/",
                                
                                background: <img src={pk5} className="absolute -right-20 -top-20 opacity-20 scale-[0.8] " />,
@@ -118,7 +118,7 @@ function Projects() {
       
 
       <div className='card-content-01  mx-auto  w-[100%] sm:w-[90%] md:w-[90%]  lg:w-[90%] xl:w-[90%] 2xl:w-[70%] card-content-01  mx-auto  w-[100%] sm:w-[90%] md:w-[90%]  lg:w-[90%] xl:w-[90%] 2xl:w-[70%] '>
-          <div className='card-content-head text-white [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#6A4CFF80_inset]  w-full grid place-items-center rounded-xl    md:p-20 p-5    '>
+          <div className='card-content-head text-white [border:1px_solid_rgba(255,255,255,.1)]   w-full grid place-items-center rounded-xl    md:p-20 p-5    '>
              
 
               <h1 className='text-4xl font-medium text-poppins '>
@@ -128,7 +128,7 @@ function Projects() {
 
               </p> */}
 
-              {/* <div className='sm:w-[70%] mt-3 sm:mt-3 2xl:mt-5 w-[100%] 2xl:w-[80%] sm:flex [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_40px_-20px_#ffffff1f_inset] p-3 rounded-lg  ' >
+              <div className='sm:w-[70%] mt-3 sm:mt-3 2xl:mt-5 w-[100%] 2xl:w-[80%] sm:flex [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_40px_-20px_#ffffff1f_inset] p-3 rounded-lg  ' >
                 <div className='w-[100%] sm:w-[50%] flex sm:justify-center items-center ' >
                    <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[2em] 2xl:text-[3em] font-medium tracking-tighter text-neutral-400 dark:text-white' ><NumberTicker  value={4} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-400 dark:text-white" />   MNC s</p>
                 </div>
@@ -138,11 +138,11 @@ function Projects() {
                    <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[2.2em] 2xl:text-[3em] font-medium tracking-tighter text-neutral-100 dark:text-white' ><NumberTicker  value={20} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-400 dark:text-white" /><span className='text-neutral-400' >+ </span> Projects </p>
                 </div>
                
-              </div> */}
+              </div>
           </div>
           
 
-          {/* <div className='card-content-body '>
+          <div className='card-content-body '>
              <BentoGrid className="lg:grid-rows-3 mt-7">
               {features.map((feature) => (
               <BentoCard key={feature.name} {...feature} /> 
@@ -151,7 +151,7 @@ function Projects() {
               // 
     </BentoGrid>
    
-          </div> */}
+          </div>
 
 
       </div>
@@ -165,9 +165,9 @@ function Projects() {
     {/* <div className='h-10 sm:h-20 bg-black' >
     </div> */}
 
-    <div>
+    {/* <div>
         <Bcards  className=' text-white p-10 w-[90%] mx-auto mb-4 xl:w-[70%] [box-shadow:0_-20px_80px_-20px_#6A4CFF80_inset] [border:1px_solid_rgba(255,255,255,.1)]  rounded-xl ' items={items} />
-    </div>
+    </div> */}
 
     
 

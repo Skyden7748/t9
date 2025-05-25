@@ -1,5 +1,6 @@
 
 import './About.css'
+import { useTranslation } from 'react-i18next';
 
 
 import Profile from '../components/Profile'
@@ -40,7 +41,10 @@ import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
 import ScrollAnimationPage from '../components/ScrollAnimationPage';
 import { SelectDemo } from '../components/SelectButton'
+
 function About() {
+
+  const { t } = useTranslation()
 
   
   
@@ -114,9 +118,9 @@ Partner with us to embark on a journey where innovation meets expertise, and you
 <div style={{backgroundImage: `url(${heroImage})`}}  className=' bg-cover bg-no-repeat bg-center home-mob w-[100%] mx-auto h-[100%] xl:hidden  '>
   <div className='w-[80%] h-[100%] mx-auto flex  items-center ' >
   <div className='text-neutral-200   ' >
-     <h1 className='text-[18vw] font-[400]' >DESIGN</h1>
-     <h1 className='text-[17vw] font-[400] leading-[10vw] ' >DEVELOP</h1>
-     <h1 className='text-[17vw] font-[400] ' >DELIVER.</h1>
+     <h1 className='text-[18vw] font-[400]' >{t("aboutH1")}</h1>
+     <h1 className='text-[17vw] font-[400] leading-[10vw] ' >{t("aboutH2")}</h1>
+     <h1 className='text-[17vw] font-[400] ' >{t("aboutH3")}</h1>
      <p className='text-[4vw] font-[400] text-neutral-400 p-1' >Turning Ideas into Reality, Crafting Innovation with Precision, and Bringing Excellence to Every Step.</p>
   </div>
   </div>
@@ -141,9 +145,9 @@ Partner with us to embark on a journey where innovation meets expertise, and you
 
   <div  className='hero-image hidden  xl:block'>
   <div  className='headings align-center '>
-    <h1 className='he1 '>DESIGN</h1>
-    <h1 className='he2 '>DEVELOP</h1>
-    <h1 className='he3 '>DELIVER.</h1>
+    <h1 className='he1 '>{t("aboutH1")}</h1>
+    <h1 className='he2 '>{t("aboutH2")}</h1>
+    <h1 className='he3 '>{t("aboutH3")}</h1>
     {/* <AnimatedShinyText shimmerWidth={50} className="font-poppins  ">Empowering your brand with creative strategies and expert digital craftsmanship.
       </AnimatedShinyText> */}
       
@@ -185,28 +189,19 @@ Partner with us to embark on a journey where innovation meets expertise, and you
   <div className='home-main-three'>
       
       <div className='home-three-content'>
-      <h1>We are-</h1>
-            <p>A passionate and innovative group of talented individuals, driven by creativity and <span className='hl'>expertise <svg className='hl-svg' width="404" height="185" viewBox="0 0 404 185" fill="none" xmlns="http://www.w3.org/2000/svg">
-<motion.path
-initial= {{pathLength: 0}}
-whileInView={{pathLength: 1}}
-transition={{duration: 2, ease: "easeInOut"}}
-d="M2.86188 86.1608C2.56981 86.1973 17.3224 75.5145 19.535 74.1997C64.8581 47.2649 116.871 28.6794 168.215 17.2938C204.774 9.18688 242.753 4.95479 280.215 5.26018C305.216 5.464 331.874 8.22884 355.751 15.9889C381.781 24.4487 410.777 44.8213 397.941 75.722C391.44 91.3721 377.517 104.004 363.58 112.983C343.91 125.655 322.207 135.558 300.621 144.48C250.376 165.248 194.554 180.808 139.98 182.212C101.505 183.202 45.5685 175.974 24.3194 138.427C14.18 120.511 24.6195 99.0636 35.7731 84.421C63.19 48.4274 104.971 25.6242 142.481 1.99805" stroke="#92F6FF" stroke-width="7" stroke-linecap="round"/>
-</svg>
- </span> , dedicated to <span> <svg className='hl-svg-t' width="827" height="28" viewBox="0 0 827 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<motion.path
-initial= {{pathLength: 0}}
-whileInView={{pathLength: 1}}
-transition={{duration: 5, ease: "easeInOut"}}
-d="M33.0443 3.6335C29.6706 3.70847 26.1625 3.93814 22.823 4.43087C17.4921 5.21743 33.5637 5.51828 38.9524 5.51828C107.637 5.51828 176.301 2.32861 245.01 2.32861C426.746 2.32861 608.615 4.27023 789.784 19.7991C800.461 20.7143 811.128 21.5101 821.753 22.9163C830.846 24.1198 818.655 23.8586 816.207 23.8586C763.116 23.8586 709.948 19.5908 656.943 16.9719C553.715 11.8717 450.306 7.89656 346.933 9.14284C231.634 10.5329 116.716 17.8857 1.72797 25.8159" stroke="#7DE7FF" stroke-width="3" stroke-linecap="round"/>
-</svg>
+      <h1>{t("aboutH4")}</h1>
+           <p>{t("aboutpara")}</p>
 
- transforming your digital presence </span> into an engaging, impactful, and unforgettable experience.</p>
+
+
+
       </div>
 
   </div>
       
   </div>
+
+
   
 
     

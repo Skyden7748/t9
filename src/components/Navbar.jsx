@@ -122,7 +122,7 @@ const Navbar = () => {
   {/* <MenuItem onClick={handleClose}><Link to={'/transform'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Digital Transformation</Link></MenuItem> */}
   <MenuItem onClick={handleClose}><Link to={'/projects'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Project Management </Link></MenuItem>
  
-  <MenuItem onClick={handleClose}><Link to={'/wealth'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Wealth Management </Link> </MenuItem>
+  {/* <MenuItem onClick={handleClose}><Link to={'/wealth'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Wealth Management </Link> </MenuItem> */}
 </Menu>
     </div>
               

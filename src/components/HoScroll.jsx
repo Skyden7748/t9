@@ -10,6 +10,10 @@ import after2 from '../assets/after2.png'
 import before3 from '../assets/before3.png'
 import after3 from '../assets/after3.png'
 import scroll1 from '../assets/scroll1.png'
+import after4 from '../assets/after4.png'
+import before4 from '../assets/before4.png'
+import before5 from '../assets/before5.png'
+import after5 from '../assets/after5.png'
 
 const Example = () => {
   return (
@@ -75,52 +79,48 @@ const cards = [
     id: 2,
   },
   {
-    url: arrow,
+    url: after1,
     id: 3,
   },
   {
-    url: after1,
+    url: before2,
     title: "Title 3",
     id: 4,
   },
   {
-    url: arrow,
+    url: after2,
     title: "Title 4",
     id: 5,
   },
   {
-    url: before2,
+    url: before3,
     title: "Title 5",
     id: 6,
   },
   {
-    url: arrow,
+    url: after3,
     title: "Title 6",
     id: 7,
   },
   {
-    url: after2,
+    url: before4,
     title: "Title 7",
     id: 8,
   },
   {
-    url: arrow,
+    url: after4,
     title: "Title 7",
     id: 9,
   },
   {
-    url: before3,
+    url: before5,
     title: "Title 7",
     id: 10,
   },
   {
-    url: arrow,
+    url: after5,
     title: "Title 7",
     id: 11,
   },
-  {
-    url: after3,
-    title: "Title 7",
-    id: 12,
-  },
+  
 ];

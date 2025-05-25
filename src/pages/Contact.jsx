@@ -78,15 +78,44 @@ function Contact() {
              <div className='form-container'>
              
              <form ref={form} className="form" onSubmit={sendEmail}>
-      <div className="title">Contact us</div>
-      <input type="text" placeholder="Name" className="input" name='p_name' />
-      <input type="text" placeholder="Email Id" className="input" name='p_email' />
-      <input type="text" placeholder='Phone Number' className="input" name='p_phone' />
-      <input type="text" placeholder="Subject" className="input" name='p_subject' />
+  <div className="title">Contact us</div>
+  <input type="text" placeholder="Name" className="input" name="p_name" />
+  <input type="text" placeholder="Email Id" className="input" name="p_email" />
+  <input type="text" placeholder="Phone Number" className="input" name="p_phone" />
+  
+  <div className=" checkbox-group grid grid-cols-3 gap-2 "  name="p_subject" >
+  <label className="checkbox text-white flex w-[10rem]  p-2 [border:1px_solid_rgba(255,255,255,.2)] items-center rounded-xl  "  >
+    
+    Software Development
+    <input type="checkbox" name="p_subject" value="Software Development" className="scale-50  "  />
+     
+  </label>
+  <label className="checkbox text-white flex  w-[10rem] p-2 [border:1px_solid_rgba(255,255,255,.2)] items-center rounded-xl  "  >
+    Interface UI/UX
+    <input type="checkbox" name="p_subject" value="UIUX" className="scale-50  "  />
+    
+  </label>
+  <label className="checkbox text-white flex  w-[10rem]  p-2 [border:1px_solid_rgba(255,255,255,.2)] items-center rounded-xl  "  >
+    Graphics Design
+    <input type="checkbox" name="p_subject" value="Graphics Design" className="scale-50 "  />
+    
+  </label>
+  <label className="checkbox text-white flex  w-[10rem] p-2 [border:1px_solid_rgba(255,255,255,.2)] items-center rounded-xl  "  >
+    Project Management
+    <input type="checkbox" name="p_subject" value="Project Management" className="scale-50  "  />
+    
+  </label>
+  <label className="checkbox text-white flex  w-[10rem] p-2 [border:1px_solid_rgba(255,255,255,.2)] items-center rounded-xl   "  >
+    Digital Marketing
+    <input type="checkbox" name="p_subject" value="Digital Marketing" className="scale-50  "  />
+    
+  </label>
+</div>
 
-      <textarea placeholder="Message" className="textarea" name='p_message'></textarea>
-      <button type="submit" >Submit</button>
-    </form>
+  <textarea placeholder="What’s on your mind?" className="textarea" name="p_message"></textarea>
+  <button type="submit">Submit</button>
+</form>
+
             </div> 
           </div>
         </div>

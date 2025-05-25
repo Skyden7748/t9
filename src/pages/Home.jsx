@@ -129,7 +129,7 @@ function home() {
            </div> 
            </Link>
         </SwiperSlide>
-        <SwiperSlide> 
+        {/* <SwiperSlide> 
           <Link to='/wealth' className='no-underline ' >
           <div className='swiper-slide [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]'>
             <div className='swiper-slide-top'>
@@ -139,7 +139,7 @@ function home() {
             
           </div> 
           </Link>
-        </SwiperSlide>
+        </SwiperSlide> */}
         {/* <SwiperSlide> 
           <Link to='/transform' className='no-underline ' >
           <div className='swiper-slide [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]'>

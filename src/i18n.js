@@ -1,4 +1,3 @@
-
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
@@ -40,12 +39,36 @@ i18n
 
                  feature5: "Project Management",
 
-                 feature6: "Wealth Management"
+                 feature6: "Wealth Management",
+
+
+
+                 aboutH1:"DESIGN",
+                 aboutH2:"DEVELOP",
+                 aboutH3:"DELIVER.",
+                 aboutH4:"Turning Ideas into Reality, Crafting Innovation with Precision, and Bringing Excellence to Every Step.",
+
+                aboutH4:"We are-",
+                aboutpara:"A passionate and innovative group of talented individuals, driven by creativity and expertise , dedicated to transforming your digital presence into an engaging, impactful, and unforgettable experience."
+
+                
+
+
+
+                 
 
 
             }
             
         },
+
+
+
+
+
+
+
+
         fr: {
 
             translation:{
@@ -76,7 +99,42 @@ feature3: "Conception graphique",
 feature4: "Marketing numérique",
 
 feature5: "Gestion de projet",
-feature6: "Gestion de patrimoine"
+feature6: "Gestion de patrimoine",
+
+
+aboutH1:"DESIGN",
+aboutH2:"DÉV",
+aboutH3:"LIVRER.",
+aboutH4:"Transformer les idées en réalité, façonner l'innovation avec précision et apporter l'excellence à chaque étape.",
+
+aboutH4:"Nous sommes –",
+aboutpara:"Un groupe passionné et innovant d'individus talentueux, animé par la créativité et l'expertise, dédié à transformer votre présence digitale en une expérience engageante, percutante et inoubliable."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             }
             
@@ -111,9 +169,15 @@ feature4: "Digitales Marketing",
 
 feature5: "Projektmanagement",
 
-feature6: "Gestion de patrimoine"
+feature6: "Gestion de patrimoine",
    
+aboutH1:"DESIGN",
+aboutH2:"DEV",
+aboutH3:"LIEFERN.",
+aboutH4:"Ideen in die Realität umsetzen, Innovation mit Präzision gestalten und Exzellenz in jeden Schritt bringen.",
 
+aboutH4:"Wir sind –",
+aboutpara:"Eine leidenschaftliche und innovative Gruppe talentierter Persönlichkeiten, angetrieben von Kreativität und Fachwissen, die sich der Aufgabe widmet, Ihre digitale Präsenz in ein fesselndes, wirkungsvolles und unvergessliches Erlebnis zu verwandeln."
 
 
             }
