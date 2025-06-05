@@ -1,6 +1,6 @@
-
-import './About.css'
 import { useTranslation } from 'react-i18next';
+import './About.css'
+
 
 
 import Profile from '../components/Profile'
@@ -41,6 +41,7 @@ import { Link } from 'react-router-dom';
 import NumberTicker from '../components/NumberTicker';
 import ScrollAnimationPage from '../components/ScrollAnimationPage';
 import { SelectDemo } from '../components/SelectButton'
+import { DBox } from '../components/DBox';
 
 function About() {
 
@@ -209,6 +210,7 @@ Partner with us to embark on a journey where innovation meets expertise, and you
 
     
    {/* <Example/> */}
+   <DBox />
 
    
     </>

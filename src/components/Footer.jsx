@@ -5,8 +5,11 @@ import { PhoneIcon } from 'lucide-react'
 import { EnvelopeClosedIcon, InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons'
 import { EmailSharp, Instagram, LinkedIn, PhoneAndroidRounded, Twitter } from '@mui/icons-material'
 import { useLocation } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+
+  const { t } = useTranslation();
     const location = useLocation();
   
     // Define colors for specific routes
@@ -42,14 +45,12 @@ function Footer() {
 
 
        <div className='no-underline mt-5 sm:mt-0 ' >
-          <h1 className='text-neutral-200 font-[500]' >services</h1>
-          <Link  to={'/software  '} className='no-underline text-neutral-500 ' ><p><span>software</span> development</p></Link>
-          <Link to={'/uiux'} className='no-underline text-neutral-500 ' ><p>UI UX</p></Link>
-          <Link to={'/graphics'} className='no-underline text-neutral-500 ' ><p>Graphics Design</p></Link>
-          <Link to={'/marketing'} className='no-underline text-neutral-500 ' ><p>Digital Marketing</p></Link>
-          <Link to={'/wealth'} className='no-underline text-neutral-500 ' ><p>Wealth Management</p></Link>
-          <Link to ={'/projects'} className='no-underline text-neutral-500 ' ><p>Project Management</p></Link>
-          <Link to ={'/transform'} className='no-underline text-neutral-500 ' ><p>Digital Transformation</p></Link>
+          <h1 className='text-neutral-200 font-[500]' >services </h1>
+          <Link  to={'/software  '} className='no-underline text-neutral-500 ' ><p>{t("feature1")}</p></Link>
+          <Link to={'/uiux'} className='no-underline text-neutral-500 ' ><p>{t("feature2")}</p></Link>
+          <Link to={'/graphics'} className='no-underline text-neutral-500 ' ><p>{t("feature3")}</p></Link>
+          <Link to={'/marketing'} className='no-underline text-neutral-500 ' ><p>{t("feature4")}</p></Link>
+          
        </div>
 
 

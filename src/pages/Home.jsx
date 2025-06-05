@@ -185,15 +185,15 @@ function home() {
       <div className='home-five-content-top'></div>
       <div className='home-five-content-topt'></div>
       <div className='home-five-content-toptt'></div>
-      <p>meet</p>
-      <h1>The</h1>
+      <p>{(t("meet"))}</p>
+      <h1>{t("the")}</h1>
       <p></p>
     </div>
      
     <div className='' >
      <button class="button" data-text="Awesome">
-    <span class="actual-text">&nbsp;TEAM&nbsp;</span>
-    <span aria-hidden="true" class="hover-text">&nbsp;TEAM&nbsp;</span>
+    <span class="actual-text">&nbsp;{t("team")}&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;{t("team")}&nbsp;</span>
     </button>
      </div>
      </div>
@@ -218,7 +218,7 @@ function home() {
      <Link to="/develop" className=' w-[90%] h-[25%] mx-auto no-underline'  >
      <div  style={{ backgroundImage: `url(${sk1})` }} className=' w-[100%] h-[100%] rounded-xl bg-center bg-no-repeat  backdrop-blur-md bg-white/2 xl:bg-transparent  [box-shadow:0_-10px_30px_-20px_#ffffff1f_inset]  [border:1px_solid_rgba(255,255,255,.1)] w-[100%] h-[100%] [border] grid place-items-center rounded-[10px]   '  >
        <h1 className='text-neutral-300 font-[500] text-center text-[1.6em] transition-transform duration-300 hover:scale-90 ' >
-           Developers
+           {t("devs")}
        </h1>
      </div>
      </Link>
@@ -228,7 +228,7 @@ function home() {
       <Link to="/finance" className='w-[90%] h-[25%] mx-auto no-underline'>
      <div style={{ backgroundImage: `url(${sk3})` }} className=' w-[100%] h-[100%] rounded-xl bg-center bg-no-repeat  backdrop-blur-md bg-white/2 xl:bg-transparent [box-shadow:0_-10px_30px_-20px_#ffffff1f_inset]  [border:1px_solid_rgba(255,255,255,.1)] w-[100%] h-[100%] [border] grid place-items-center rounded-[10px]   ' >
        <h1 className='text-neutral-300 font-[500] text-center text-[1.6em] transition-transform duration-300 hover:scale-90 ' >
-           finance 
+           {t("fins")} 
        </h1>
      </div>
      </Link>
@@ -236,7 +236,7 @@ function home() {
       <Link to={"/marketingteam"} className='w-[90%] h-[25%] mx-auto no-underline' >
      <div style={{ backgroundImage: `url(${sk4})` }} className=' w-[100%] h-[100%] rounded-xl bg-center bg-no-repeat  backdrop-blur-md bg-white/2 xl:bg-transparent [box-shadow:0_-10px_30px_-20px_#ffffff1f_inset]  [border:1px_solid_rgba(255,255,255,.1)] w-[100%] h-[100%] [border] grid place-items-center rounded-[10px]   ' >
        <h1 className='text-neutral-300 font-[500] text-center text-[1.6em] transition-transform duration-300 hover:scale-90 ' >
-           marketing
+           {t("mark")}
        </h1>
      </div>
      </Link>
@@ -259,12 +259,14 @@ function home() {
       
       <div className='swiper-container'>
       <Swiper
+      
         slidesPerView={3}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
+        
         className="mySwiper"
       >
         <SwiperSlide> 
@@ -293,16 +295,12 @@ function home() {
               <div className='client-box'>
  
                <div className='client-circle'></div>
-               <div className='client-name'><p>Mainstay</p></div>
+               <div className='client-name'><p>Chessensei</p></div>
                
               </div>
               <div className='client-content'>
                  <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Quisquam, quia. Doloribus, dolores. Soluta, 
-                   officiis. Quisquam, quia. Doloribus, dolores. 
-                   Soluta, officiis. Quisquam, quia. Doloribus, dolores. 
-                   Soluta, officiis. 
+                  helped revamp our outdated website into a sleek, user-friendly platform and enhanced our digital presence with effective marketing strategies. The process was smooth, quick, and delivered great results.
                  </p>
               </div>
              </div>  
@@ -313,16 +311,12 @@ function home() {
               <div className='client-box'>
  
                <div className='client-circle'></div>
-               <div className='client-name'><p>org s </p></div>
+               <div className='client-name'><p>Mainstay Abroad</p></div>
                
               </div>
               <div className='client-content'>
                  <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Quisquam, quia. Doloribus, dolores. Soluta, 
-                   officiis. Quisquam, quia. Doloribus, dolores. 
-                   Soluta, officiis. Quisquam, quia. Doloribus, dolores. 
-                   Soluta, officiis. 
+                   brought our brand to life by creating a stunning logo, cohesive brand identity, and eye-catching social media banners and posters. Their designs truly captured our vision and gave us a strong, professional presence across all platforms. 
                  </p>
               </div>
              </div> 
@@ -332,56 +326,23 @@ function home() {
           <div className='client-box'>
  
              <div className='client-circle'></div>
-             <div className='client-name'><p>org s </p></div>
+             <div className='client-name'><p> Dude Caps  </p></div>
  
               </div>
              <div className='client-content'>
              <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quisquam, quia. Doloribus, dolores. Soluta, 
-                officiis. Quisquam, quia. Doloribus, dolores. 
-                Soluta, officiis. Quisquam, quia. Doloribus, dolores. 
-                Soluta, officiis. 
+                instantly grasped our vision and helped elevate our brand with clarity and style. The final outcome felt polished, professional, and truly aligned with who we are.
               </p>
               </div>
  
 
           </div> 
         </SwiperSlide>
-        <SwiperSlide> 
-           <div className='swiper-slide'>
-            
-             
-
-           </div> 
-        </SwiperSlide>
-        <SwiperSlide> 
-          <div className='swiper-slide'>
-           
-            
-          </div> 
-        </SwiperSlide>
-        <SwiperSlide> 
-          <div className='swiper-slide'>
-
-
-
-          </div> 
-        </SwiperSlide>
-        <SwiperSlide> 
-          <div className='swiper-slide'>
-            
-
-
-          </div> 
-        </SwiperSlide>
-        <SwiperSlide> 
-          <div className='swiper-slide'>
-            
-            
-            
-          </div> 
-        </SwiperSlide>
+        
+        
+        
+        
+        
       </Swiper>
 
       <div className="z-20 absolute left-0 top-0 h-full w-[0px]  md:w-[250px] lg:w-[450px] bg-gradient-to-r from-black to-transparent pointer-events-none"></div>

@@ -12,8 +12,10 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
+import { useTranslation } from 'react-i18next';
 
 function Designer() {
+  const { t } = useTranslation() 
   return (
     <div className='d-main bg-white'>
       <div className='h-[7rem] md:h-[10rem] bg-white'></div>
@@ -22,13 +24,13 @@ function Designer() {
       
         <div className='d-head md:h-[20rem] h-[10rem] grid place-items-center   [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]   '>
             <h1 className="text-7xl font-bold  tracking-[-1px] md:text-7xl lg:text-7xl">
-              The <AuroraText>Creatives</AuroraText>
+              {t('service73')} <AuroraText> {t('service74')} </AuroraText>
             </h1>
         </div>
 
         <div className='d-para  p-5 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]   ' >
             <p className='text-neutral-400 text-[1.3em]'  >
-            Continuously striving for excellence. Our unique approach blends creativity with functionality, ensuring that every project is not only visually captivating but also user-centric. With a passion for innovation and a commitment to delivering high-quality designs, we bring expertise to every step of the creative process, turning ideas into impactful solutions.
+            {t('service75')}
             </p>
         </div>
 

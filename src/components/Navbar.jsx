@@ -9,8 +9,11 @@ import MenuItem from '@mui/material/MenuItem';
 import { useLocation } from "react-router-dom";
 import { Select } from '@mui/material';
 import { SelectDemo } from './SelectButton';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
+
+  const { t } = useTranslation()
 
   const location = useLocation();
 
@@ -74,10 +77,10 @@ const Navbar = () => {
             {/* Navigation links */}
             <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
               <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>
-                Home
+                {t("home")}
               </Link>
               <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>
-                About
+                {t("about")}
               </Link>
 
               
@@ -92,7 +95,7 @@ const Navbar = () => {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        Services
+        {t("services")}
       </Button>
       <Menu
   id="basic-menu"
@@ -115,12 +118,12 @@ const Navbar = () => {
     },
   }}
 >
-  <MenuItem onClick={handleClose}><Link to={'/software'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Software Development</Link></MenuItem>
+  <MenuItem onClick={handleClose}><Link to={'/software'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >{t("feature1")}</Link></MenuItem>
   <MenuItem onClick={handleClose}><Link to={'/uiux'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >UI UX</Link></MenuItem>
-  <MenuItem onClick={handleClose}><Link to={'/graphics'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Graphics Design</Link></MenuItem>
-  <MenuItem onClick={handleClose}><Link to={'/marketing'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Digital Marketing</Link></MenuItem>
+  <MenuItem onClick={handleClose}><Link to={'/graphics'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >{t("feature3")}</Link></MenuItem>
+  <MenuItem onClick={handleClose}><Link to={'/marketing'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >{t("feature4")}</Link></MenuItem>
   {/* <MenuItem onClick={handleClose}><Link to={'/transform'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Digital Transformation</Link></MenuItem> */}
-  <MenuItem onClick={handleClose}><Link to={'/projects'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Project Management </Link></MenuItem>
+  {/* <MenuItem onClick={handleClose}><Link to={'/projects'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Project Management </Link></MenuItem> */}
  
   {/* <MenuItem onClick={handleClose}><Link to={'/wealth'} className='no-underline text-[#d4d4d4] font-[400] text-[1.1em]' >Wealth Management </Link> </MenuItem> */}
 </Menu>
@@ -129,7 +132,7 @@ const Navbar = () => {
               
               
               <Link to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>
-                Contact
+                {t("contact")}
               </Link>
               <SelectDemo />
             </div>

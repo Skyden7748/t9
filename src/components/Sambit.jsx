@@ -81,7 +81,7 @@ function Sambit() {
 
 
   return (
-    <div className=' profile-main  bg-black '>
+    <div className=' profile-main  bg-black  '>
                 <div className='h-[7rem] sm:h-[10rem] bg-black'>
     
                 </div>

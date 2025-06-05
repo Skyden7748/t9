@@ -27,8 +27,17 @@ import NumberTicker from '../components/NumberTicker';
 import p_2 from '../assets/p-2.jpg';
 import p_3 from '../assets/p-3.jpg';
 import p_1 from '../assets/p-1.jpg';
+import { useTranslation } from 'react-i18next';
+import { DBox } from '../components/DBox';
+import { useState } from 'react';
+
+
 
 function CardContent() {
+  
+    const { t } = useTranslation();
+
+     const [open, setOpen] = useState(false);
 
   const avatars = [
     {
@@ -52,8 +61,8 @@ function CardContent() {
     const features = [
         {
           Icon: RocketIcon ,
-          name: "Custom Application Development:",
-          description: "We design and develop web and mobile applications tailored to your goals and operational needs. 7+ Tech Stacks Mastered",
+          name: t("service4"),
+          description: t("service5"),
           href: "/",
           
           background: <img src={bg0} className="absolute -right-20 -top-25 opacity-20 blur-m " />,
@@ -61,8 +70,8 @@ function CardContent() {
         },
         {
           Icon: InputIcon,
-          name: "Enterprise Solutions:",
-          description: "Optimize your business processes with enterprise-grade solutions. 10+ Integrations Performed, 40% Operational Efficiency Boost",
+          name: t("service6"),
+          description: t("service7"),
           href: "/",
           
           background: <img src={bg3} className="absolute -right-[130px] -top-20 opacity-20 scale-[0.7]  " />,
@@ -70,8 +79,8 @@ function CardContent() {
         },
         {
           Icon: GlobeIcon,
-          name: "UI/UX-Centric Development ",
-          description: "Our designs prioritize user experience. Designed over 200 unique UI elements and icons. Ensured 100% responsiveness across all screen sizes.",
+          name: t("service8") ,
+          description: t("service9"),
           href: "/",
           
           background: <img src={bg1} className="absolute -right-[130px] top-[-150px] opacity-40 blur-m scale-[1] sm:scale-[0.5] " />,
@@ -79,8 +88,8 @@ function CardContent() {
         },
         {
           Icon: FileTextIcon,
-          name: "Agile Development Process",
-          description: "90% On-Time Delivery, Daily Standups, Iterative Improvements. ",
+          name: t("service10"),
+          description: t("service11"),
           href: "/",
           
           background: <img src={bg4} className="absolute -right-[90px] sm:-right-[150px] -top-[190px] opacity-25 sm:scale-[0.5] scale-[0.9]   " />,
@@ -88,9 +97,9 @@ function CardContent() {
         },
         {
           Icon: CalendarIcon,
-          name: "Maintenance and Support",
+          name: t("service12"),
           description:
-            "99.9% Uptime Guaranteed. 24/7 Support Coverage,  Issues Resolved with in 24 Hours",
+            t("service13"),
           href: "/",
           
           background: <img src={bg5} className="absolute -right-20 -top-20 opacity-20 scale-[0.8] " />,
@@ -109,21 +118,21 @@ function CardContent() {
              
 
               <h1 className='text-3xl font-medium text-poppins '>
-              Empowering Your Vision with Cutting-Edge Solutions
+              {t('service1')}
               </h1>
               {/* <p>
 
               </p> */}
                <div className='sm:w-[70%] mt-3 sm:mt-3 2xl:mt-5 w-[100%] 2xl:w-[80%] sm:flex [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_40px_-20px_#ffffff1f_inset] p-3 rounded-lg  ' >
                 <div className='w-[100%] sm:w-[50%] flex sm:justify-center items-center ' >
-                   <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[1.5em] 2xl:text-[2em] font-medium tracking-tighter text-neutral-400 dark:text-white' ><NumberTicker  value={11} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-200 dark:text-white" /><span className='text-neutral-600' >+ </span> projects</p>
+                   <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[1.5em] 2xl:text-[2em] font-medium tracking-tighter text-neutral-400 dark:text-white' ><NumberTicker  value={11} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-200 dark:text-white" /><span className='text-neutral-600' >+ </span> {t('service2')}</p>
                 </div>
 
                 
 
                 
                 <div className='w-[100%] sm:w-[50%] flex sm:justify-center items-center ' >
-                   <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[1.5em] 2xl:text-[2em] font-medium tracking-tighter text-neutral-400 dark:text-white' ><NumberTicker  value={95} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-200 dark:text-white" /><span className='text-neutral-600' >% </span> customer satisfaction </p>
+                   <p className='font-poppins whitespace-pre-wrap text-[2em] sm:text-[1.5em] 2xl:text-[2em] font-medium tracking-tighter text-neutral-400 dark:text-white' ><NumberTicker  value={95} className=" font-poppins whitespace-pre-wrap  font-medium tracking-tighter text-neutral-200 dark:text-white" /><span className='text-neutral-600' >% </span> {t('service3')} </p>
                 </div>
                
               </div>
@@ -159,21 +168,24 @@ function CardContent() {
           < PhoneCallIcon  className='h-8 w-8 text-neutral-600  ' />
 
           <div className='sm:flex gap-3' >
-          <p className='text-xl font-semibold text-poppins text-neutral-300'>Give us a call on</p>
+          <p className='text-xl font-semibold text-poppins text-neutral-300'>{t('service14')}</p>
           
           <p className='text-xl font-sm text-poppins text-neutral-400' >9869679058</p>
           </div>
           </div>
           <div className="ccc mt-3 sm:mt-0  sm:block pl-10  sm:pl-6 w-[100%] sm:w-[50%] border-right border-neutral-600 ">
-             <p className='text-xl mb-3 font-sm text-poppins text-neutral-300' >or, get in touch </p>
-              <Link className='no-underline' to="/contact" ><ShimmerButton >contact</ShimmerButton></Link>
+             <p className='text-xl mb-3 font-sm text-poppins text-neutral-300' > {t('service15')} </p>
+              <button className='  no-underline bg-transparent border-none ' onClick={() => setOpen(true)}>
+                        <ShimmerButton>contact</ShimmerButton>
+                      </button>
+                      <DBox open={open} setOpen={setOpen} />
 
              
           </div>
         
         </div>
         <div className='sm:w-[30%] p-5 mt-4 sm:mt-0  sm:h-full [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] rounded-xl '>
-          <p className='text-xl mb-3 font-sm text-poppins text-neutral-300 ' >meet our dev team</p>
+          <p className='text-xl mb-3 font-sm text-poppins text-neutral-300 ' > {t('service16')} </p>
           <AvatarCircles numPeople={1} avatarUrls={avatars} />
         </div>
       </div>

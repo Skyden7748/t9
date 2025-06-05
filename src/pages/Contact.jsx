@@ -7,7 +7,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
+import { useTranslation } from 'react-i18next';
+
 function Contact() {
+  const { t } = useTranslation();
   const form = useRef();
   // useEffect(() => {
   //   toast.success("Toast is working!");
@@ -38,8 +41,8 @@ function Contact() {
       <ToastContainer />
       <div className='heading'>
         <div className='sub-heading'>
-          <h1>Get In Touch</h1>
-          <p>Partner with us for innovative digital solutions that elevate user experiences and drive your business forward.</p>
+          <h1>{t('contactH1')}</h1>
+          <p>{t('contactpara')}</p>
         </div>
       </div>
       <div className='content'>
@@ -60,15 +63,15 @@ function Contact() {
          <div className='contact-us-left'> 
           <div className='contact-us-left-lines-container'>
                 <div className='contact-us-line'>
-                     <h1>Address</h1>
+                     <h1>{t('contactH2')}</h1>
                      <p><span className='iconss'>< FaMapMarkerAlt /></span> Jagamara, Khandagiri, Bhubaneswar</p>
                  </div>
                  <div className='contact-us-line'>
-                     <h1>Mobile</h1>
+                     <h1>{t('contactH3')}</h1>
                      <p><span className='iconss'>< FaPhone /></span> +91 9348711458</p>
                   </div>
                  <div className='contact-us-line'>
-                     <h1>Email</h1>
+                     <h1> {t('contactH14')} </h1>
                      <p><span className='iconss'>< FaEnvelope /></span> tribe-9.info@gmail.com</p>
                  </div>
           </div> 
@@ -78,35 +81,35 @@ function Contact() {
              <div className='form-container'>
              
              <form ref={form} className="form" onSubmit={sendEmail}>
-  <div className="title">Contact us</div>
-  <input type="text" placeholder="Name" className="input" name="p_name" />
-  <input type="text" placeholder="Email Id" className="input" name="p_email" />
-  <input type="text" placeholder="Phone Number" className="input" name="p_phone" />
+  <div className="title"> {t('contactH4')} </div>
+  <input type="text" placeholder={t("contactH5")} className="input" name="p_name" />
+  <input type="text" placeholder={t("contactH6")} className="input" name="p_email" />
+  <input type="text" placeholder={t("contactH7")} className="input" name="p_phone" />
   
-  <div className=" checkbox-group grid grid-cols-3 gap-2 "  name="p_subject" >
+  <div className=" checkbox-group grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2"  name="p_subject" >
   <label className="checkbox text-white flex w-[10rem]  p-2 [border:1px_solid_rgba(255,255,255,.2)] items-center rounded-xl  "  >
     
-    Software Development
+    {t("contactH8")}
     <input type="checkbox" name="p_subject" value="Software Development" className="scale-50  "  />
      
   </label>
   <label className="checkbox text-white flex  w-[10rem] p-2 [border:1px_solid_rgba(255,255,255,.2)] items-center rounded-xl  "  >
-    Interface UI/UX
+    {t("contactH9")}
     <input type="checkbox" name="p_subject" value="UIUX" className="scale-50  "  />
     
   </label>
   <label className="checkbox text-white flex  w-[10rem]  p-2 [border:1px_solid_rgba(255,255,255,.2)] items-center rounded-xl  "  >
-    Graphics Design
+    {t("contactH10")}
     <input type="checkbox" name="p_subject" value="Graphics Design" className="scale-50 "  />
     
   </label>
   <label className="checkbox text-white flex  w-[10rem] p-2 [border:1px_solid_rgba(255,255,255,.2)] items-center rounded-xl  "  >
-    Project Management
+    {t("contactH11")}
     <input type="checkbox" name="p_subject" value="Project Management" className="scale-50  "  />
     
   </label>
   <label className="checkbox text-white flex  w-[10rem] p-2 [border:1px_solid_rgba(255,255,255,.2)] items-center rounded-xl   "  >
-    Digital Marketing
+    {t("contactH12")}
     <input type="checkbox" name="p_subject" value="Digital Marketing" className="scale-50  "  />
     
   </label>

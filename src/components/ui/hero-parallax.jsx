@@ -2,8 +2,11 @@
 import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"; // corrected import
 import { Link } from "react-router-dom"; // correct for React Router
+import { useTranslation } from 'react-i18next';
 
 export const HeroParallax = ({ products = [] }) => {
+
+  
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
@@ -43,6 +46,7 @@ export const HeroParallax = ({ products = [] }) => {
   );
 
   return (
+    
     <div
       ref={ref}
       className="h-[250vh] py-[0px] overflow-hidden antialiased relative flex flex-col self-auto [perspective:900px] [transform-style:preserve-3d]"
@@ -77,13 +81,15 @@ export const HeroParallax = ({ products = [] }) => {
 };
 
 export const Header = () => {
+  const { t } = useTranslation();
   return (
+    
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold text-white">
-        The Ultimate <br /> Graphics Design studio
+        {t("graphichead")} <br /> {t("graphichead2")}
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-400">
-      We craft stunning visuals that captivate and inspire. Our team of passionate designers thrives on creativity, turning ideas into eye-catching designs with the latest tools and trends in graphic design.
+      {t("graphicpara")}
       </p>
     </div>
   );
