@@ -242,7 +242,7 @@ d="M33.0443 3.6335C29.6706 3.70847 26.1625 3.93814 22.823 4.43087C17.4921 5.2174
      
 
 
-     <Link to="/about" className=' w-[100%] h-[25%] no-underline'  >
+     <Link to="/develop" className=' w-[100%] h-[25%] no-underline'  >
      <div style={{ backgroundImage: `url(${sk1})` }} className=' bg-center backdrop-blur-sm bg-white/2   [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]  [border:1px_solid_rgba(255,255,255,.1)] w-[100%] h-[100%] [border] grid place-items-center sm:rounded-[20px] rounded-[10px]   ' >
        <h1 className='text-neutral-200 font-[500] text-center text-[1.2em] sm:text-[1.6em] transition-transform duration-300 hover:scale-90 ' >
            Developers
@@ -252,7 +252,7 @@ d="M33.0443 3.6335C29.6706 3.70847 26.1625 3.93814 22.823 4.43087C17.4921 5.2174
 
      
       
-      <Link className='w-[100%] h-[25%] no-underline'>
+      <Link to={"/finance"} className='w-[100%] h-[25%] no-underline'>
      <div style={{ backgroundImage: `url(${sk3})` }} className=' bg-center backdrop-blur-sm bg-white/2 [  box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]  [border:1px_solid_rgba(255,255,255,.1)] w-[100%] h-[100%] [border] grid place-items-center sm:rounded-[20px] rounded-[10px]   ' >
        <h1 className='text-neutral-200 font-[500] text-center text-[1.2em] sm:text-[1.6em] transition-transform duration-300 hover:scale-90 ' >
            finance 
@@ -260,7 +260,7 @@ d="M33.0443 3.6335C29.6706 3.70847 26.1625 3.93814 22.823 4.43087C17.4921 5.2174
      </div>
      </Link>
       
-      <Link className='w-[100%] h-[25%] no-underline' >
+      <Link to={"/marketing"} className='w-[100%] h-[25%] no-underline' >
      <div style={{ backgroundImage: `url(${sk4})` }} className=' bg-center backdrop-blur-sm bg-white/2  [box-shadow:0_-10px_40px_-20px_#ffffff1f_inset]  [border:1px_solid_rgba(255,255,255,.1)] w-[100%] h-[100%] [border] grid place-items-center sm:rounded-[20px] rounded-[10px]   ' >
        <h1 className='text-neutral-200 font-[500] text-center text-[1.2em] sm:text-[1.6em] transition-transform duration-300 hover:scale-90 ' >
            marketing

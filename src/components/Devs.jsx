@@ -51,7 +51,7 @@ function Devs() {
                   Sarada Prasad
                   </h1>
 
-                  <Link className = 'p-5  no-underline'  >
+                  <Link to={'/sarada'} className = 'p-5  no-underline'  >
 
                        <div className='[border:1px_solid_rgba(255,255,255,.2)] w-[fit-content] p-3 -mt-5 rounded-xl '>
                             <p className='text-neutral-400 text-[1em]' >Portfolio</p>
@@ -78,7 +78,7 @@ function Devs() {
                   Aryan Broy
                   </h1>
 
-                  <Link className = 'p-5  no-underline'  >
+                  <Link to={'/aryan'} className = 'p-5  no-underline'  >
 
                        <div className='[border:1px_solid_rgba(255,255,255,.2)] w-[fit-content] p-3 -mt-5 rounded-xl '>
                             <p className='text-neutral-400 text-[1em]' >Portfolio</p>

@@ -10,7 +10,14 @@ i18n
     resources:{
         en: {
             translation:{
-               
+
+
+                dhead:"The",
+                dhead2:"Developers",
+                dpara:"As a group of efficient developers, we foster collaboration, deliver scalable code, and embrace innovation to improve processes and functionality. By managing time effectively and adapting to changes, we create a positive environment and ensure high-quality outcomes to achieve team goals.",
+
+                
+
                 test1: "Freelance clients trust us for creative, high-quality work that exceeds expectations. From websites to branding, our clear communication and efficient delivery foster lasting partnerships.",
                 test2: "Helped revamp our outdated website into a sleek, user-friendly platform and enhanced our digital presence with effective marketing strategies. The process was smooth, quick, and delivered great results.",
                 test3: "Brought our brand to life by creating a stunning logo, cohesive brand identity, and eye-catching social media banners and posters. Their designs truly captured our vision and gave us a strong, professional presence across all platforms.",
@@ -327,8 +334,23 @@ i18n
         fr: {
 
             
+             
+               
+                
+
+
+
 
             translation:{
+
+               
+                 dhead:"Les",
+                dhead2:" Développeurs",
+                dpara:"En tant que groupe de développeurs efficaces, nous favorisons la collaboration, livrons un code évolutif et adoptons l’innovation pour améliorer les processus et la fonctionnalité. En gérant efficacement notre temps et en nous adaptant aux changements, nous créons un environnement positif et garantissons des résultats de haute qualité pour atteindre les objectifs de l’équipe.",
+
+
+
+
                 finhead: "Responsables financiers",
 finpara: "En tant que groupe de responsables financiers stratégiques, nous favorisons la collaboration, facilitons une prise de décision éclairée et assurons la responsabilité fiscale pour renforcer la croissance de l'organisation. En gérant efficacement les ressources et en nous adaptant aux tendances financières, nous créons un environnement stable et livrons des résultats de haute qualité pour atteindre les objectifs de l’équipe et de l’entreprise.",
 
@@ -645,6 +667,12 @@ test1: "Les clients freelances nous font confiance pour un travail créatif et e
         es: {
 
             translation:{
+
+
+
+                dhead:"Die",
+                dhead2:"Entwickler",
+                dpara:"Als eine Gruppe effizienter Entwickler fördern wir Zusammenarbeit, liefern skalierbaren Code und setzen auf Innovation, um Prozesse und Funktionalitäten zu verbessern. Durch effektives Zeitmanagement und Anpassungsfähigkeit schaffen wir ein positives Umfeld und sichern hochwertige Ergebnisse zur Erreichung der Teamziele.",
 
 
                finhead: "Finanzmanager",
