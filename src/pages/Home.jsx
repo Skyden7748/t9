@@ -16,6 +16,8 @@ import  { useRef, useState } from 'react';
 import { Swiper, SwiperSlide ,  } from "swiper/react";
 import { Pagination,Autoplay } from "swiper/modules";
 import { useTranslation } from 'react-i18next';
+import ms_logo from '../assets/ms_logo.png';
+
 
 
 // Import Swiper styles
@@ -274,17 +276,15 @@ function home() {
               
              <div className='client-box'>
 
-              <div className='client-circle'></div>
-              <div className='client-name'><p>Chessensei</p></div>
+              <div className='client-circle bg-[url("https://www.citypng.com/public/uploads/preview/hd-white-f-fortnite-logo-letter-png-701751694787348a5cfubueyu.png")] bg-center bg-no-repeat bg-cover '></div>
+              <div className='client-name'><p>Freelance Clients</p></div>
               
              </div>
              <div className='client-content'>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Quisquam, quia. Doloribus, dolores. Soluta, 
-                  officiis. Quisquam, quia. Doloribus, dolores. 
-                  Soluta, officiis. Quisquam, quia. Doloribus, dolores. 
-                  Soluta, officiis. 
+                 {t('test1')}
+
+
                 </p>
              </div>
             </div> 
@@ -294,13 +294,13 @@ function home() {
               
               <div className='client-box'>
  
-               <div className='client-circle'></div>
+               <div className='client-circle bg-[url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYldjMNXEa-hLhLXaJzaCCLklNasXE3CMkJA&s")] bg-center bg-no-repeat bg-cover'>  </div>
                <div className='client-name'><p>Chessensei</p></div>
                
               </div>
               <div className='client-content'>
                  <p>
-                  helped revamp our outdated website into a sleek, user-friendly platform and enhanced our digital presence with effective marketing strategies. The process was smooth, quick, and delivered great results.
+                  {t('test2')}
                  </p>
               </div>
              </div>  
@@ -310,13 +310,13 @@ function home() {
               
               <div className='client-box'>
  
-               <div className='client-circle'></div>
+               <div className='client-circle  bg-cover bg-center bg-no-repeat ' style={{ backgroundImage: `url(${ms_logo})` }}></div>
                <div className='client-name'><p>Mainstay Abroad</p></div>
                
               </div>
               <div className='client-content'>
                  <p>
-                   brought our brand to life by creating a stunning logo, cohesive brand identity, and eye-catching social media banners and posters. Their designs truly captured our vision and gave us a strong, professional presence across all platforms. 
+                  {t('test3')}
                  </p>
               </div>
              </div> 
@@ -325,13 +325,13 @@ function home() {
           <div className='swiper-slide client [box-shadow:0_-20px_30px_-15px_#ffffff1f_inset]'>
           <div className='client-box'>
  
-             <div className='client-circle'></div>
+             <div className='client-circle bg-[url("https://media.licdn.com/dms/image/v2/C5612AQE2QCtzrx7Qnw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520056881313?e=2147483647&v=beta&t=zf1G4NcuM0RJtpaCp4aDyd89QI0sMQ5sOc4Gtikogmg")] bg-cover bg-center bg-no-repeat '></div>
              <div className='client-name'><p> Dude Caps  </p></div>
  
               </div>
              <div className='client-content'>
              <p>
-                instantly grasped our vision and helped elevate our brand with clarity and style. The final outcome felt polished, professional, and truly aligned with who we are.
+                {t('test4')}
               </p>
               </div>
  

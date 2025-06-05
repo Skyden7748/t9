@@ -14,8 +14,10 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
+import { useTranslation } from 'react-i18next';
 
 function FinanceGuys() {
+  const { t } = useTranslation();
   return (
     <div className='d-main bg-black'>
     <div className='h-[7rem] sm:h-[10rem] bg-black'></div>
@@ -24,13 +26,13 @@ function FinanceGuys() {
     
       <div className='d-head sm:h-[20rem] h-[10rem] grid place-items-center   [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]   '>
           <h1 className="text-7xl font-bold text-neutral-200  tracking-[-1px] md:text-7xl lg:text-7xl">
-          Financial Managers
+          {t('finhead')}
           </h1>
       </div>
 
       <div className='d-para  p-5 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]   ' >
           <p className='text-neutral-400 text-[1.3em]'  >
-          As a group of efficient developers, we foster collaboration, deliver scalable code, and embrace innovation to improve processes and functionality. By managing time effectively and adapting to changes, we create a positive environment and ensure high-quality outcomes to achieve team goals.
+          {t('finpara')}
           </p>
       </div>
 
@@ -75,7 +77,8 @@ function FinanceGuys() {
 
                
                   <h1 className=' text-neutral-300 font-semibold text-[1.7em] sm:font-bold '>
-                  Sambit Maharana
+                  
+                  Rikth Dutta
                   </h1>
 
                   <Link to={'/rikth'} className = 'p-5  no-underline'  >

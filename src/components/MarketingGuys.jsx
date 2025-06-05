@@ -15,8 +15,10 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
+import { useTranslation } from 'react-i18next';
 
 function MarketingGuys() {
+  const { t } = useTranslation();
   return (
     <div className='d-main bg-black'>
     <div className='h-[7rem] sm:h-[10rem] bg-black'></div>
@@ -25,13 +27,13 @@ function MarketingGuys() {
     
       <div className='d-head sm:h-[20rem] h-[10rem] grid place-items-center   [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]   '>
           <h1 className="text-7xl font-bold text-neutral-200  tracking-[-1px] md:text-7xl lg:text-7xl">
-          Marketing Team
+          {t('marketing1')}
           </h1>
       </div>
 
       <div className='d-para  p-5 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]   ' >
           <p className='text-neutral-400 text-[1.3em]'  >
-          As a group of dynamic marketers, we foster collaboration, craft impactful campaigns, and embrace creativity to enhance brand presence and engagement. By managing time effectively and adapting to market trends, we cultivate a positive environment and deliver high-quality results to achieve team objectives.
+          {t('marketing2')}
           </p>
       </div>
 

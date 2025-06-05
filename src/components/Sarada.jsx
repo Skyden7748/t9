@@ -21,6 +21,7 @@ import theartist01 from '../assets/theartist01.png';
 import chessensei_logo from '../assets/chessensei_logo.jpg';
 import ms_logo from '../assets/ms_logo.png';
 import fiverr from '../assets/fiverr.png';
+import { useTranslation } from 'react-i18next';
 
 import {
    BellIcon,
@@ -46,6 +47,7 @@ import Examplee from './HoScroll2';
 
 
 function Sarada() {
+  const { t } = useTranslation();
 
    const features = [
            {
@@ -122,11 +124,11 @@ function Sarada() {
                         <h1 className='text-2xl font-semibold text-neutral-200 ' >
                            Sarada Prasad
                        </h1>
-                       <p className='text-neutral-400'>Designer, Developer</p>
+                       <p className='text-neutral-400'>{t('portfolio1')}</p>
                     </div>
                     </div>
                     <div className='sm:w-[40%]   w-[100%] [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] p-9 rounded-xl ]' >
-                        <h1 className='text-xl font-semibold text-neutral-200   ' >socials</h1>
+                        <h1 className='text-xl font-semibold text-neutral-200   ' >{t('portfolio2')}</h1>
                         <div className='flex mt-1 gap-1'>  <a href="https://twitter.com/" > <TwitterLogoIcon className='h-7 w-7 text-neutral-600'  /> </a>   <a href="https://www.instagram.com/skyden.psd"><InstagramLogoIcon className='h-7 w-7 text-neutral-600' /> </a>    <a href="https://www.linkedin.com/in/sarada-prasad-b56437267/"><LinkedInLogoIcon className='h-7 w-7 text-neutral-600' /> </a> </div>
                     </div>
                     
@@ -134,11 +136,11 @@ function Sarada() {
                 </div>
     
                 <div className='profile-about md:w-[95%] xl:w-[85%] w-[100%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] rounded-xl p-10  ' >
-                     <h1 className='text-2xl font-semibold text-neutral-200 mb-2   ' >about</h1>
-                    <p className='text-neutral-400 [font-size:1.1rem] mb-[3px]  ' >Passionate professional with expertise in graphic design, UI/UX, and front-end development.   </p> 
-                   <p className='text-neutral-400 [font-size:1.1rem]  mb-[3px]' >Freelance designer since 2021, expanded into web development in 2023.</p> 
-                   <p className='text-neutral-400 [font-size:1.1rem]  mb-[3px]' >Create visually appealing, user-friendly digital experiences.</p>
-                   <p className='text-neutral-400 [font-size:1.1rem]  mb-[3px]'>Committed to quality and collaboration.</p>
+                     <h1 className='text-2xl font-semibold text-neutral-200 mb-2   ' >{t('portfolio3')}</h1>
+                    <p className='text-neutral-400 [font-size:1.1rem] mb-[3px]  ' >{t('portfolio4')}    </p> 
+                   <p className='text-neutral-400 [font-size:1.1rem]  mb-[3px]' >{t('portfolio5')} </p> 
+                   <p className='text-neutral-400 [font-size:1.1rem]  mb-[3px]' >{t('portfolio6')}</p>
+                   <p className='text-neutral-400 [font-size:1.1rem]  mb-[3px]'>{t('portfolio7')}</p>
                 </div>
                 </div>
 
@@ -147,12 +149,12 @@ function Sarada() {
                    
                      <div className=' md:w-[95%] xl:w-[85%] w-[100%] p-10    mx-auto   mb-5 [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] rounded-xl ' >
     
-                     <h1 className='text-2xl font-semibold text-neutral-200   ' >Stats</h1>
+                     <h1 className='text-2xl font-semibold text-neutral-200   ' >{t('stats1')}</h1>
                      <div className='md:flex w-[100%] pt-2 justify-between gap-3  '  >
                              <div className='md:w-[60%] w-[100%] p-2 sm:p-5   [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-lg  '  >
                                    
                                    <div className='mt-0'>
-                                      <h2 className='text-lg font-semibold text-neutral-300   '  >Design <span className='font-[100]'>|</span> 90%</h2>
+                                      <h2 className='text-lg font-semibold text-neutral-300   '  >{t('stats2')} <span className='font-[100]'>|</span> 90%</h2>
                                       <div className='flex mt-0'>
                                          <div className='w-[100%] flex' > <Progress  value={90}/>   </div>
                                          
@@ -160,7 +162,7 @@ function Sarada() {
                                       </div>
                                    </div>
                                    <div className='mt-4'>
-                                      <h2 className='text-lg font-semibold text-neutral-300   '  >Development <span className='font-[100]'>|</span> 60%</h2>
+                                      <h2 className='text-lg font-semibold text-neutral-300   '  >{t('stats3')} <span className='font-[100]'>|</span> 60%</h2>
                                       <div className='flex '>
                                          <div className='w-[100%] flex' > <Progress  value={60}/>   </div>
                                          
@@ -169,7 +171,7 @@ function Sarada() {
                                    </div>
 
                                    <div className='mt-4'>
-                                      <h2 className='text-lg font-semibold text-neutral-300   '  >User Experience <span className='font-[100]'>|</span> 80%</h2>
+                                      <h2 className='text-lg font-semibold text-neutral-300   '  >{t('stats4')} <span className='font-[100]'>|</span> 80%</h2>
                                       <div className='flex '>
                                          <div className='w-[100%] flex' > <Progress  value={80}/>   </div>
                                          
@@ -178,7 +180,7 @@ function Sarada() {
                                    </div>
 
                                    <div className='mt-4'>
-                                      <h2 className='text-lg font-semibold text-neutral-300   '  >User Research <span className='font-[100]'>|</span> 70%</h2>
+                                      <h2 className='text-lg font-semibold text-neutral-300   '  >{t('stats5')} <span className='font-[100]'>|</span> 70%</h2>
                                       <div className='flex '>
                                          <div className='w-[100%] flex' > <Progress  value={70}/>   </div>
                                          
@@ -187,7 +189,7 @@ function Sarada() {
                                    </div>
 
                                    <div className='mt-4'>
-                                      <h2 className='text-lg font-semibold text-neutral-300   '  >Project Management <span className='font-[100]'>|</span> 30%</h2>
+                                      <h2 className='text-lg font-semibold text-neutral-300   '  >{t('stats6')} <span className='font-[100]'>|</span> 30%</h2>
                                       <div className='flex '>
                                          <div className='w-[100%] flex' > <Progress  value={30}/>   </div>
                                          
@@ -200,9 +202,9 @@ function Sarada() {
                              <div style={{ backgroundImage: `url(${theartist01})` }}  className=' bg-cover bg-center md:w-[40%] w-[100%] mt-5 md:mt-0   [border:1px_solid_rgba(255,255,255,.1)] rounded-xl [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] p-10 flex items-end ' >
                                    
                                    <div className=' text-neutral-200  ' >
-                                   <h1>Expressive</h1>
-                                   <h1>Masterful</h1>
-                                   <h1>Original</h1>
+                                   <h1>{t('portfolio8')}</h1>
+                                   <h1>{t('portfolio9')}</h1>
+                                   <h1>{t('portfolio10')}</h1>
                                    </div>
 
                              </div>
@@ -244,27 +246,27 @@ Created an online portal to represent their brand.
                 <div className='profile-work w:[100%] sm:w-[85%] mx-auto    p-5 '>
                     
                     <div className='profile-work-1 w-[100%] sm:w-[85%] mx-auto    p-2' >
-                          <h1 className='text-2xl font-semibold text-neutral-200   ' >Work</h1>
+                          <h1 className='text-2xl font-semibold text-neutral-200   ' >{t('portfolio11')}</h1>
                           
                     </div>
                     <div className='sm:flex w-[100%] sm:w-[90%] mx-auto  p-0 rounded-xl ' >
                        <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                           <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${chessensei_logo})` }} className=' bg-cover bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
-            [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>CHESSENSEI  | Front-End Developer</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' > Developer / Designer</p>
+            [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>CHESSENSEI  | {t('portfolio26')}</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' > {t('portfolio12')}</p>
                           <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >Apr 2023 - Jan 2024</p> </div> </div>
                           
                          
                     </div>
                     <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                           <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${ms_logo})` }} className='bg-cover bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
-            [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>Mainstay Abroad | UI UX Designer</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2  ' > Logo Design, Brand Identity creation</p>
+            [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>Mainstay Abroad | {t('portfolio27')}</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2  ' > {t('portfolio13')}</p>
                           <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >Aug 2024 - nov 2024</p> </div> </div>
                           
                          
                     </div> 
                     <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                           <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${fiverr})` }} className='bg-cover bg-center bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
-            [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>Freelance Work</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' > illustrator, graphic designer, web designer</p>
+            [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>{t('portfolio14')}</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' >{t('portfolio15')}</p>
                           <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >2021 - present</p> </div> </div>
                           
                          

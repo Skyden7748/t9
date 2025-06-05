@@ -26,8 +26,11 @@ import bg5 from '../assets/card-img-5.png';
 import { PhoneCallIcon ,  } from 'lucide-react'
 import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons'
 
+import { useTranslation } from 'react-i18next';
+
 
 function Sambit() {
+   const { t } = useTranslation();
   
      const features = [
                {
@@ -100,11 +103,11 @@ function Sambit() {
                             <h1 className='text-2xl font-semibold text-neutral-200 ' >
                             Sambit Maharana
                            </h1>
-                           <p className='text-neutral-400 text-sm'>Master in Management | NEOMA BUSINESS SCHOOL </p>
+                           <p className='text-neutral-400 text-sm'>{t('portfolio33')} | NEOMA BUSINESS SCHOOL </p>
                         </div>
                         </div>
                         <div className='sm:w-[40%]   w-[100%] [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] p-9 rounded-xl ]' >
-                            <h1 className='text-xl font-semibold text-neutral-200   ' >socials</h1>
+                            <h1 className='text-xl font-semibold text-neutral-200   ' >{t('portfolio2')}</h1>
                             <div className='flex mt-1 gap-1'>  <a href="https://twitter.com/" > <TwitterLogoIcon className='h-7 w-7 text-neutral-600'  /> </a>   <a href="https://www.linkedin.com/in/sambit-maharana/"><LinkedInLogoIcon className='h-7 w-7 text-neutral-600' /> </a> </div>
                         </div>
                         
@@ -112,11 +115,11 @@ function Sambit() {
                     </div>
         
                     <div className='profile-about w-[100%] sm:w-[85%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] rounded-xl p-10  ' >
-                         <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >about</h1>
-                        <p className='text-neutral-400 [font-size:1.1rem mb-[3px] ]' >Product manager with expertise in planning, development, and implementation.</p> 
-                        <p className='text-neutral-400 [font-size:1.1rem mb-[3px] ]' >Skilled in digital marketing, IT tools, and team leadership</p>
-                        <p className='text-neutral-400 [font-size:1.1rem mb-[3px] ]' >Strong in process improvement, ideation, and critical thinking</p>
-                        <p className='text-neutral-400 [font-size:1.1rem mb-[3px] ]' >Passionate about entrepreneurship</p>
+                         <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >{t('portfolio3')}</h1>
+                        <p className='text-neutral-400 [font-size:1.1rem mb-[3px] ]' >{t('portfolio34')}</p> 
+                        <p className='text-neutral-400 [font-size:1.1rem mb-[3px] ]' >{t('portfolio35')}</p>
+                        <p className='text-neutral-400 [font-size:1.1rem mb-[3px] ]' >{t('portfolio36')}</p>
+                        <p className='text-neutral-400 [font-size:1.1rem mb-[3px] ]' >{t('portfolio37')}</p>
          
                     </div>
                     </div>
@@ -126,12 +129,12 @@ function Sambit() {
                                                         
                                                           <div className=' md:w-[95%] xl:w-[85%] w-[100%] p-10    mx-auto   mb-5 [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] rounded-xl ' >
                                          
-                                                          <h1 className='text-2xl font-semibold text-neutral-200   ' >Stats</h1>
+                                                          <h1 className='text-2xl font-semibold text-neutral-200   ' >{t('stats1')}</h1>
                                                           <div className='md:flex w-[100%] pt-2 justify-between gap-3  '  >
                                                                   <div className='md:w-[60%] w-[100%] p-2 sm:p-5   [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-lg  '  >
                                                                         
                                                                         <div className='mt-0'>
-                                                                           <h2 className='text-lg font-semibold text-neutral-300   '  >Data & Metrics Orientation <span className='font-[100]'>|</span> 50%</h2>
+                                                                           <h2 className='text-lg font-semibold text-neutral-300   '  >{t('stats7')} <span className='font-[100]'>|</span> 50%</h2>
                                                                            <div className='flex mt-0'>
                                                                               <div className='w-[100%] flex' > <Progress  value={50}/>   </div>
                                                                               
@@ -139,7 +142,7 @@ function Sambit() {
                                                                            </div>
                                                                         </div>
                                                                         <div className='mt-4'>
-                                                                           <h2 className='text-lg font-semibold text-neutral-300   '  >Management <span className='font-[100]'>|</span> 90%</h2>
+                                                                           <h2 className='text-lg font-semibold text-neutral-300   '  >{t('stats7')} <span className='font-[100]'>|</span> 90%</h2>
                                                                            <div className='flex '>
                                                                               <div className='w-[100%] flex' > <Progress  value={90}/>   </div>
                                                                               
@@ -148,7 +151,7 @@ function Sambit() {
                                                                         </div>
                                         
                                                                         <div className='mt-4'>
-                                                                           <h2 className='text-lg font-semibold text-neutral-300   '  >Presentation & Communication Skills <span className='font-[100]'>|</span> 80%</h2>
+                                                                           <h2 className='text-lg font-semibold text-neutral-300   '  >{t('stats9')} <span className='font-[100]'>|</span> 80%</h2>
                                                                            <div className='flex '>
                                                                               <div className='w-[100%] flex' > <Progress  value={80}/>   </div>
                                                                               
@@ -157,7 +160,7 @@ function Sambit() {
                                                                         </div>
                                         
                                                                         <div className='mt-4'>
-                                                                           <h2 className='text-lg font-semibold text-neutral-300   '  >Creativity of Solution <span className='font-[100]'>|</span> 60%</h2>
+                                                                           <h2 className='text-lg font-semibold text-neutral-300   '  >{t('stats10')} <span className='font-[100]'>|</span> 60%</h2>
                                                                            <div className='flex '>
                                                                               <div className='w-[100%] flex' > <Progress  value={60}/>   </div>
                                                                               
@@ -166,7 +169,7 @@ function Sambit() {
                                                                         </div>
                                         
                                                                         <div className='mt-4'>
-                                                                           <h2 className='text-lg font-semibold text-neutral-300   '  >Project Management <span className='font-[100]'>|</span> 85%</h2>
+                                                                           <h2 className='text-lg font-semibold text-neutral-300   '  >{t('stats6')} <span className='font-[100]'>|</span> 85%</h2>
                                                                            <div className='flex '>
                                                                               <div className='w-[100%] flex' > <Progress  value={85}/>   </div>
                                                                               
@@ -179,9 +182,9 @@ function Sambit() {
                                                                   <div style={{ backgroundImage: `url(${themanage02})` }}  className=' bg-cover bg-center md:w-[40%] w-[100%] mt-5 md:mt-0   [border:1px_solid_rgba(255,255,255,.1)] rounded-xl [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] p-10 flex items-end ' >
                                                                         
                                                                         <div className=' text-white  ' >
-                                                                        <h1>Visionary</h1>
-                                                                        <h1>Empathetic</h1>
-                                                                        <h1>Decisive</h1>
+                                                                        <h1>{t('portfolio38')}</h1>
+                                                                        <h1>{t('portfolio39')}</h1>
+                                                                        <h1>{t('portfolio40')}</h1>
                                                                         </div>
                                         
                                                                   </div>
@@ -197,13 +200,13 @@ function Sambit() {
                                                        <div className='profile-work w:[100%] sm:w-[75%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] rounded-t-xl   p-5 '>
                                                                          
                                                                          <div className='profile-work-1 w-[100%] sm:w-[85%] mx-auto    p-2' >
-                                                                               <h1 className='text-2xl font-semibold text-neutral-200   ' >Work</h1>
+                                                                               <h1 className='text-2xl font-semibold text-neutral-200   ' >{t('portfolio11')}</h1>
                                                                                
                                                                          </div>
                                                                          <div className='sm:flex w-[100%] sm:w-[90%] mx-auto  p-0 rounded-xl ' >
                                                                             <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                                                                                <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${nextleap_logo})` }} className=' bg-cover bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
-                                                                 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>NextLeap | Product Management Fellow</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' >NextLeap · Trainee</p>
+                                                                 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>NextLeap | {t('portfolio41')}</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' >NextLeap · {t('portfolio42')}</p>
                                                                                <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >may 2024 - Jul 2024</p> </div> </div>
                                                                                
                                                                               
@@ -211,14 +214,14 @@ function Sambit() {
                                                                          <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                                                                                <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${chessensei_logo})` }} className='bg-cover bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
                                                                  [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>
-Chessensei</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2  ' > Program Manager & Co-Founder</p>
+Chessensei</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2  ' > {t('portfolio43')}</p>
                                                                                <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >Nov 2022 - May 2024</p> </div> </div>
                                                                                
                                                                               
                                                                          </div> 
                                                                          <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                                                                                <div className='flex w-[100%] gap-2  ' > <div style={{ backgroundImage: `url(${bep_logo})` }} className='bg-cover bg-center bg-center min-w-[50px] max-h-[50px] rounded-full bg-gray-500 flex items-center justify-center 
-                                                                 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>BEPEC Solutions . Full time</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' > Program Manager </p>
+                                                                 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]' ></div> <div><h1 className='text-[1rem] font-semibold text-neutral-200'>BEPEC Solutions . {t('portfolio44')}</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:0.9vw] mt-2 ' > {t('portfolio45')} </p>
                                                                                <p  className='text-neutral-500 [font-size:1.1rem] md:[font-size:0.8vw] ' >Sep 2018 - Aug 2020</p> </div> </div>
                                                                                
                                                                               
@@ -301,13 +304,12 @@ Chessensei</h1> <p className='text-neutral-400 [font-size:1.1rem] md:[font-size:
                     <div className='profile-work w:[100%] sm:w-[75%] mx-auto rounded-bl-xl rounded-br-xl [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)]  p-5 '>
                         
                         <div className='profile-work-1 w-[100%] sm:w-[85%] mx-auto    p-5 ' >
-                              <h1 className='text-2xl font-semibold text-neutral-200   ' >Projects</h1>
+                              <h1 className='text-2xl font-semibold text-neutral-200   ' >{t('portfolio28')}</h1>
                               
                         </div>
                         <div className='sm:flex w-[100%] sm:w-[95%] mx-auto p-5 rounded-xl ' >
                            <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
-                              <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >Ecommerce Tech Gig
-Workers in Bharat
+                              <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' > {t('portfolio46')}
 </h1>
                              
                               {/* <p className='text-neutral-400 [font-size:1.1rem] mt-1 ' >Insightful, data-driven analysis with accuracy and clarity.</p> */}
@@ -315,14 +317,14 @@ Workers in Bharat
                               
                         </div>
                        <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
-                              <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >Automated Shopping Assistance For Adidas</h1>
+                              <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >{t('portfolio47')}</h1>
                              
                               {/* <p className='text-neutral-400 [font-size:1.1rem] mt-1 ' >Insightful, data-driven analysis with accuracy and clarity.</p> */}
                                <button className=' cursor-pointer text-neutral-200 [font-size:1rem] mt-1 bg-black pt-1 pb-1 pl-4 pr-4 rounded-md [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.4)] ' onClick={() => { window.open('https://assets.nextleap.app/submissions/AutomatedShoppingAssistanceForAdidas1-3e16d717-4468-4e80-a30d-8919b00a410c.pdf') }} ><p> View  </p></button>
                               
                         </div>
                         <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
-                              <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >Launch Plan for High-Frequent Users</h1>
+                              <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >{t('portfolio48')}</h1>
                              
                               {/* <p className='text-neutral-400 [font-size:1.1rem] mt-1 ' >Insightful, data-driven analysis with accuracy and clarity.</p> */}
                                <button className=' cursor-pointer text-neutral-200 [font-size:1rem] mt-1 bg-black pt-1 pb-1 pl-4 pr-4 rounded-md [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.4)] ' onClick={() => { window.open('https://assets.nextleap.app/submissions/Launch-Plan-for-High-Frequent-Users-a47512a0-6fa6-4ed9-8843-1eff256a7f17.pdf') }} ><p> View  </p></button>
@@ -331,7 +333,7 @@ Workers in Bharat
                         </div>
                         <div className='sm:flex w-[100%] sm:w-[95%] mx-auto p-5 rounded-xl ' >
                            <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
-                              <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >STREETBITE, your local street food companion in hand
+                              <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >STREETBITE, {t('portfolio49')}
 </h1>
                              
                               {/* <p className='text-neutral-400 [font-size:1.1rem] mt-1 ' >Insightful, data-driven analysis with accuracy and clarity.</p> */}
@@ -339,9 +341,7 @@ Workers in Bharat
                               
                         </div>
                        <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
-                              <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >Understanding the
-Food Delivery
-Market in India</h1>
+                              <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' > {t('portfolio50')}</h1>
                              
                               {/* <p className='text-neutral-400 [font-size:1.1rem] mt-1 ' >Insightful, data-driven analysis with accuracy and clarity.</p> */}
                                <button className=' cursor-pointer text-neutral-200 [font-size:1rem] mt-1 bg-black pt-1 pb-1 pl-4 pr-4 rounded-md [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.4)] ' onClick={() => { window.open('https://assets.nextleap.app/submissions/Understanding-the-Food-Delivery-Market-in-India-396b44e7-609f-4225-9470-b9deed72a79a.pdf') }} ><p> View  </p></button>
@@ -349,8 +349,7 @@ Market in India</h1>
                         </div>
                         <div className='profile-work-1 w-[100%] sm:w-[30%] mx-auto [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.1)] p-5 rounded-xl ' >
                               <h1 className='text-2xl font-semibold text-neutral-200 mb-2  ' >Zomato's User
-Segmentation and
-Review Insights</h1>
+{t('portfolio51')}</h1>
                              
                               {/* <p className='text-neutral-400 [font-size:1.1rem] mt-1 ' >Insightful, data-driven analysis with accuracy and clarity.</p> */}
                                <button className=' cursor-pointer text-neutral-200 [font-size:1rem] mt-1 bg-black pt-1 pb-1 pl-4 pr-4 rounded-md [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] [border:1px_solid_rgba(255,255,255,.4)] ' onClick={() => { window.open('https://assets.nextleap.app/submissions/Zomatos-User-Segmentation-and-Review-Insights-bcbd1f6c-d092-44ad-9e4f-98a9e1d642a1.pdf') }} ><p> View  </p></button>

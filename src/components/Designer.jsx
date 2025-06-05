@@ -50,7 +50,7 @@ function Designer() {
                     <h1 className=' font-semibold text-[1.7em] sm:font-bold '>
                     Sarada Prasad
                     </h1>
-                    <p className='text-neutral-500 font-semibold text-[1em] mb-2' >Lead Designer</p>
+                    <p className='text-neutral-500 font-semibold text-[1em] mb-2' >{t('leaddesigner')}</p>
 
                     <Link to={'/sarada'} className = 'p-5  no-underline'  >
 

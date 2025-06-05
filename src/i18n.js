@@ -10,6 +10,12 @@ i18n
     resources:{
         en: {
             translation:{
+               
+                test1: "Freelance clients trust us for creative, high-quality work that exceeds expectations. From websites to branding, our clear communication and efficient delivery foster lasting partnerships.",
+                test2: "Helped revamp our outdated website into a sleek, user-friendly platform and enhanced our digital presence with effective marketing strategies. The process was smooth, quick, and delivered great results.",
+                test3: "Brought our brand to life by creating a stunning logo, cohesive brand identity, and eye-catching social media banners and posters. Their designs truly captured our vision and gave us a strong, professional presence across all platforms.",
+                test4: "Instantly grasped our vision and helped elevate our brand with clarity and style. The final outcome felt polished, professional, and truly aligned with who we are.",
+
                 H_Greet1:"Who We Are",
                 H_Greet12:"Innovating the Future, One Experience at a Time", 
                  H_Sen1:"Our initiative is built on the belief that technology should not just work, but inspire.",
@@ -191,8 +197,119 @@ i18n
 
                 graphicpara:"We craft stunning visuals that captivate and inspire. Our team of passionate designers thrives on creativity, turning ideas into eye-catching designs with the latest tools and trends in graphic design.",
 
+                // meet the team page
+                    // portfolio
+                        // sarada prasad
+                        portfolio1:"Designer, Developer",
+                        portfolio2:"socials",
+                        portfolio3:"about",
+                        portfolio4:"Passionate professional with expertise in graphic design, UI/UX, and front-end development.",
+                        portfolio5:"Freelance designer since 2021, expanded into web development in 2023.",
+                        portfolio6:"Create visually appealing, user-friendly digital experiences.",
+                        portfolio7:"Committed to quality and collaboration.",
+
+                        stats1:"Stats",
+                        stats2:"Design",
+                        stats3:"Development",
+                        stats4:"User Experience",
+                        stats5:"User Research",
+                        stats6:"Project Management",
+
+                        portfolio8:"Expressive",
+                        portfolio9:"Masterful",
+                        portfolio10:"Original",
+                        portfolio11:"Work",
+                        portfolio26:"Front-End Developer",
+                        portfolio12:"Developer/Designer",
+                        portfolio27:"UI/UX Designer",
+                        portfolio13:"Logo Design, Brand Identity Creation",
+                        portfolio14:"Freelance Work",
+                        portfolio15:"Illustrator, Graphic Designer, Web Designer",
+
+                        // abhisekh swain
+                        portfolio16:"Designer",
+                        portfolio17:"Crafting visually appealing and functional solution.",
+                        portfolio18:"Focused on detail, innovation, and usability.",
+                        portfolio19:"Transforming concepts into engaging, user-friendly interfaces.",
+                        portfolio20:"Dynamic",
+                        portfolio21:"Inspiring",
+                        portfolio22:"Authentic",
+                        portfolio23:"Illustrator",
+                        portfolio24:"Graphic Designer, Illustration",
+                        portfolio25:"fine arts, graphic designer, digital art",
+                        portfolio28:"Projects",
+                        portfolio29:"Sketches",
+                        portfolio30:"Created expressive sketches that translated client ideas into compelling visuals, laying the foundation for impactful and cohesive design solutions.",
+                        portfolio31:"Advertising & Marketing Design",
+                        portfolio32:"Developed strategic advertising and marketing designs that effectively conveyed brand messages, engaging audiences through visually compelling and persuasive visuals.",
+
+                        // sambit maharana
+                        portfolio33:"Master in Management",
+                        portfolio34:"Product manager with expertise in planning, development, and implementation.",
+                        portfolio35:"Skilled in digital marketing, IT tools, and team leadership",
+                        portfolio36:"Strong in process improvement, ideation, and critical thinking",
+                        portfolio37:"Passionate about entrepreneurship",
+
+                        stats7:"Data & Metrics Orientation",
+                        stats8:"Management",
+                        stats9:"Presentation & Communication Skills",
+                        stats10:"Creativity of Solution",
+
+                        portfolio38:"Visionary",
+                        portfolio39:"Empathetic",
+                        portfolio40:"Decisive",
+                        portfolio41:"Product Management Fellow",
+                        portfolio42:"Trainee",
+                        portfolio43:"Program Manager & Co-Founder",
+                        portfolio44:"Full time",
+                        portfolio45:"Program Manager",
+                        portfolio46:"Ecommerce Tech Gig Workers in Bharat",
+                        portfolio47:"Automated Shopping Assistance For Adidas",
+                        portfolio48:"Launch Plan for High-Frequent Users",
+                        portfolio49:"your local street food companion in hand",
+                        portfolio50:"Understanding the Food Delivery Market in India",
+                        portfolio51:"User Segmentation and Review Insights",
                 
-                
+                        // rikth dutta
+                        portfolio52:"Growth Equity & VC Investment Analyst",
+                        portfolio53:"Skilled in valuation analysis, financial modeling, and financial reporting.",
+                        portfolio54:"Certified Financial Planner (CFP) and Chartered Wealth Manager (CWM).",
+                        portfolio55:"Certified in NISM-Series-VIII (Equity Derivatives) and NCCMP by NSE Academy.",
+                        portfolio56:"Passionate about startups, equity markets, and impact investing with a strategic decision-making mindset.",
+                        portfolio57:"Analytical",
+                        portfolio58:"Strategic",
+                        portfolio59:"Diligent",
+                        portfolio60:"Professor",
+                        portfolio61:"Investment Research Analyst",
+                        portfolio62:"Market Research Analyst",
+
+                        // Marketing Team Page
+                        marketing1:"Marketing Team",
+                        marketing2:"As a group of dynamic marketers, we foster collaboration, craft impactful campaigns, and embrace creativity to enhance brand presence and engagement. By managing time effectively and adapting to market trends, we cultivate a positive environment and deliver high-quality results to achieve team objectives.",
+
+                        // aryan broy
+                        portfolio63:"Developer",
+                        portfolio64:"Passionate full-stack and mobile app developer (Android & iOS)",
+                        portfolio65:"Skilled in front-end and back-end development",
+                        portfolio66:"Deliver scalable, efficient, and user-friendly solutions",
+                        portfolio67:"Leverage innovation and teamwork for impactful results",
+                        portfolio68:"Analytical",
+                        portfolio69:"Ingenious",
+                        portfolio70:"Precise",
+                        portfolio71:"a real-time collaborative canvas built with Next.js, TypeScript, and WebSockets for seamless, low-latency team drawing and brainstorming.",
+                        portfolio72:"Built a media-sharing app with Next.js, Clerk auth, Cloudinary, Prisma, and PostgreSQL. Users upload images/videos with custom thumbnails and aspect ratios. AI-powered cropping and compression optimize content. Supports public posting and downloads.",
+                        portfolio73:"Core Skills",
+                        portfolio74:"Full-Stack",
+                        portfolio75:"Building scalable, efficient, and robust apps with seamless front- and back-end integration.",
+                        portfolio76:"Mobile App Developer",
+                        portfolio77:"Craft responsive, user-centric Android and iOS apps with smooth performance and modern design.",
+                        portfolio78:"Developing smart solutions using ML and AI to optimize processes and drive innovation.",
+                        
+
+
+                        finhead:"Financial Managers",
+                        finpara:"As a group of strategic financial managers, we foster collaboration, drive informed decision-making, and ensure fiscal responsibility to strengthen organizational growth. By managing resources efficiently and adapting to financial trends, we create a stable environment and deliver high-quality outcomes to meet team and business objectives.",
+
                 
 
 
@@ -209,7 +326,14 @@ i18n
 
         fr: {
 
+            
+
             translation:{
+                finhead: "Responsables financiers",
+finpara: "En tant que groupe de responsables financiers stratégiques, nous favorisons la collaboration, facilitons une prise de décision éclairée et assurons la responsabilité fiscale pour renforcer la croissance de l'organisation. En gérant efficacement les ressources et en nous adaptant aux tendances financières, nous créons un environnement stable et livrons des résultats de haute qualité pour atteindre les objectifs de l’équipe et de l’entreprise.",
+
+
+
                 H_Greet1:"Qui nous sommes",
                 H_Greet12:"Innover l’avenir, une expérience à la fois",
                 H_Sen1:"Notre initiative repose sur la conviction que la technologie ne doit pas seulement fonctionner, mais aussi inspirer.",
@@ -396,8 +520,119 @@ service72: "rencontrez notre équipe gestion",
 
                 graphicpara:"Nous créons des visuels époustouflants qui captivent et inspirent. Notre équipe de designers passionnés s’épanouit grâce à la créativité, transformant les idées en designs accrocheurs avec les outils et tendances les plus récents du design graphique.",
 
-                
+// meet the team page
+    // portfolio
+        // sarada prasad
+        portfolio1: "Designer, Développeur",
+        portfolio2: "réseaux",
+        portfolio3: "profil",
+        portfolio4: "Professionnel passionné en design graphique, UI/UX et développement front-end.",
+        portfolio5: "Designer freelance depuis 2021, passé au web dev en 2023.",
+        portfolio6: "Crée des expériences numériques belles et faciles à utiliser.",
+        portfolio7: "Engagé pour la qualité et le travail d'équipe.",
 
+        stats1: "Statistiques",
+        stats2: "Design",
+        stats3: "Développement",
+        stats4: "Expérience Utilisateur",
+        stats5: "Recherche Utilisateur",
+        stats6: "Gestion de Projet",
+
+        portfolio8: "Expressif",
+        portfolio9: "Maîtrisé",
+        portfolio10: "Original",
+        portfolio11: "Travail",
+        portfolio26: "Dév. Front-End",
+        portfolio12: "Dév./Designer",
+        portfolio27: "Designer UI/UX",
+        portfolio13: "Logo, Identité de marque",
+        portfolio14: "Travail freelance",
+        portfolio15: "Illustrateur, Graphiste, Web designer",
+
+        // abhisekh swain
+        portfolio16: "Designer",
+        portfolio17: "Créer des solutions belles et utiles.",
+        portfolio18: "Axé sur le détail, l’innovation et l’usage.",
+        portfolio19: "Transformer les idées en interfaces conviviales.",
+        portfolio20: "Dynamique",
+        portfolio21: "Inspirant",
+        portfolio22: "Authentique",
+        portfolio23: "Illustrateur",
+        portfolio24: "Graphiste, Illustration",
+        portfolio25: "arts, graphisme, art digital",
+        portfolio28: "Projets",
+        portfolio29: "Croquis",
+        portfolio30: "Créé des croquis expressifs traduisant les idées clients en visuels forts, base d’un design cohérent et percutant.",
+        portfolio31: "Design Publicité & Marketing",
+        portfolio32: "Conçu des designs marketing stratégiques transmettant efficacement les messages de marque et captant le public par des visuels percutants.",
+
+// sambit maharana
+portfolio33: "Master en Management",
+portfolio34: "Chef produit expert en planification, dev. et mise en œuvre.",
+portfolio35: "Compétent en marketing digital, outils IT, et gestion d’équipe",
+portfolio36: "Fort en amélioration, idées et réflexion critique",
+portfolio37: "Passionné par l’entrepreneuriat",
+
+stats7: "Analyse des données & métriques",
+stats8: "Gestion",
+stats9: "Compétences en présentation & comm.",
+stats10: "Créativité des solutions",
+
+portfolio38: "Visionnaire",
+portfolio39: "Empathique",
+portfolio40: "Décisif",
+portfolio41: "Spécialiste Produit",
+portfolio42: "Stagiaire",
+portfolio43: "Chef de projet & Co-fondateur",
+portfolio44: "Temps plein",
+portfolio45: "Chef de projet",
+portfolio46: "Travailleurs e-commerce tech en Inde",
+portfolio47: "Assistance achats auto pour Adidas",
+portfolio48: "Plan de lancement pour utilisateurs fréquents",
+portfolio49: "Votre complice street food local",
+portfolio50: "Marché de la livraison en Inde",
+portfolio51: "Segments & retours utilisateurs",
+
+// rikth dutta
+portfolio52: "Analyste en capital croissance & VC",
+portfolio53: "Compétent en évaluation, modélisation financière, et reporting.",
+portfolio54: "Planificateur Financier Certifié (CFP) et Gestionnaire de Patrimoine (CWM).",
+portfolio55: "Certifié NISM-VIII (Dérivés) et NCCMP de NSE Academy.",
+portfolio56: "Passionné par les startups, les marchés d’actions et l’investissement d’impact, avec une approche stratégique.",
+portfolio57: "Analytique",
+portfolio58: "Stratégique",
+portfolio59: "Rigoureux",
+portfolio60: "Professeur",
+portfolio61: "Analyste recherche investissement",
+portfolio62: "Analyste études de marché",
+
+// Marketing Team Page
+marketing1: "Équipe Marketing",
+marketing2: "En tant qu’équipe dynamique, nous favorisons la collaboration, concevons des campagnes percutantes, et embrassons la créativité pour renforcer la marque. En gérant le temps efficacement et en nous adaptant aux tendances, nous créons un climat positif et atteignons les objectifs d’équipe.",
+
+// aryan broy
+portfolio63: "Développeur",
+portfolio64: "Développeur full-stack et mobile passionné (Android & iOS)",
+portfolio65: "Compétent en développement front-end et back-end",
+portfolio66: "Offrir des solutions évolutives, efficaces et conviviales",
+portfolio67: "Exploiter l’innovation et le travail d’équipe pour des résultats forts",
+portfolio68: "Analytique",
+portfolio69: "Ingénieux",
+portfolio70: "Précis",
+portfolio71: "Un canevas collaboratif en temps réel avec Next.js, TypeScript et WebSockets pour un dessin et un brainstorming fluides et rapides en équipe.",
+portfolio72: "Appli de partage média avec Next.js, Clerk, Cloudinary, Prisma, PostgreSQL. Téléversement avec miniatures/ratios personnalisés, recadrage AI, compression. Partage et téléchargement publics.",
+portfolio73: "Compétences clés",
+portfolio74: "Full-Stack",
+portfolio75: "Création d'apps évolutives et robustes avec une intégration front-back fluide.",
+portfolio76: "Dév. Mobile App",
+portfolio77: "Créer des apps Android/iOS centrées sur l’utilisateur, modernes et performantes.",
+portfolio78: "Créer des solutions intelligentes avec IA/ML pour optimiser et innover.",
+
+
+test1: "Les clients freelances nous font confiance pour un travail créatif et efficace qui dépasse leurs attentes. Du site web au branding, notre communication claire favorise des partenariats durables.",
+ test2: "A modernisé notre site en une plateforme élégante et facile à utiliser, tout en renforçant notre présence digitale avec des stratégies marketing efficaces. Le processus a été rapide et efficace.",                
+ test3: "A donné vie à notre marque avec un logo marquant, une identité cohérente et des bannières sociales impactantes. Leurs créations ont parfaitement capté notre vision et renforcé notre présence professionnelle.",
+ test4: "A immédiatement saisi notre vision et aidé à élever notre marque avec clarté et style. Le résultat final était soigné, professionnel et vraiment aligné avec notre identité.",
                 
 
 
@@ -410,6 +645,13 @@ service72: "rencontrez notre équipe gestion",
         es: {
 
             translation:{
+
+
+               finhead: "Finanzmanager",
+finpara: "Als eine Gruppe strategischer Finanzmanager fördern wir Zusammenarbeit, unterstützen fundierte Entscheidungen und gewährleisten finanzielle Verantwortung, um das Wachstum der Organisation zu stärken. Durch effizientes Ressourcenmanagement und Anpassung an finanzielle Trends schaffen wir ein stabiles Umfeld und liefern hochwertige Ergebnisse zur Erreichung der Team- und Unternehmensziele.",
+
+
+
                 H_Greet1: "Wer wir sind",
 H_Greet12: "Wir gestalten die Zukunft – eine Erfahrung nach der anderen",
 H_Sen1: "Unsere Initiative basiert auf der Überzeugung, dass Technologie nicht nur funktionieren, sondern auch inspirieren sollte.",
@@ -592,6 +834,123 @@ service72: "lernen Sie unser Managementteam kennen",
 
 
                 graphicpara:"Wir gestalten beeindruckende visuelle Werke, die fesseln und inspirieren. Unser Team leidenschaftlicher Designer lebt von Kreativität und verwandelt Ideen mit den neuesten Werkzeugen und Trends im Grafikdesign in auffällige Designs.",
+
+
+// meet the team page
+    // portfolio
+        // sarada prasad
+
+portfolio1: "Designer, Entwickler",
+portfolio2: "soziale Medien",
+portfolio3: "über mich",
+portfolio4: "Leidenschaftlicher Profi für Grafikdesign, UI/UX und Frontend-Entwicklung.",
+portfolio5: "Freelance-Designer seit 2021, Webentwickler seit 2023.",
+portfolio6: "Erstellt ansprechende, nutzerfreundliche digitale Erlebnisse.",
+portfolio7: "Engagiert für Qualität & Teamarbeit.",
+
+stats1: "Statistiken",
+stats2: "Design",
+stats3: "Entwicklung",
+stats4: "User Experience",
+stats5: "User Research",
+stats6: "Projektmanagement",
+
+portfolio8: "Ausdrucksstark",
+portfolio9: "Meisterhaft",
+portfolio10: "Originell",
+portfolio11: "Arbeiten",
+portfolio26: "Frontend-Entwickler",
+portfolio12: "Dev/Designer",
+portfolio27: "UI/UX-Designer",
+portfolio13: "Logo, Markenidentität",
+portfolio14: "Freelance-Arbeit",
+portfolio15: "Illustrator, Grafiker, Webdesigner",
+
+// abhisekh swain
+portfolio16: "Designer",
+portfolio17: "Gestaltet schöne und funktionale Lösungen.",
+portfolio18: "Fokus auf Details, Neues und Nutzbarkeit.",
+portfolio19: "Ideen in nutzerfreundliche Interfaces umsetzen.",
+portfolio20: "Dynamisch",
+portfolio21: "Inspirierend",
+portfolio22: "Authentisch",
+portfolio23: "Illustrator",
+portfolio24: "Grafikdesigner, Illustration",
+portfolio25: "Kunst, Grafik, Digitalkunst",
+portfolio28: "Projekte",
+portfolio29: "Skizzen",
+portfolio30: "Ausdrucksstarke Skizzen, die Kundenideen in starke Bilder überführen – Grundlage für ein wirkungsvolles Design.",
+portfolio31: "Werbe- & Marketingdesign",
+portfolio32: "Strategische Designs entwickelt, die Markenbotschaften klar vermitteln und Zielgruppen visuell ansprechen.",
+
+// sambit maharana
+portfolio33: "Master in Management",
+portfolio34: "Produktmanager mit Fokus auf Planung, Entwicklung & Umsetzung",
+portfolio35: "Erfahren in Digitalmarketing, IT-Tools & Teamführung",
+portfolio36: "Stark in Prozessen, Ideen & kritischem Denken",
+portfolio37: "Leidenschaft für Unternehmertum",
+
+stats7: "Daten- & Metrikorientierung",
+stats8: "Management",
+stats9: "Präsentation & Kommunikation",
+stats10: "Kreative Lösungen",
+
+portfolio38: "Visionär",
+portfolio39: "Einfühlsam",
+portfolio40: "Entschlossen",
+portfolio41: "Produktmanagement Fellow",
+portfolio42: "Trainee",
+portfolio43: "Programmleiter & Mitgründer",
+portfolio44: "Vollzeit",
+portfolio45: "Programmmanager",
+portfolio46: "E-Commerce-Gigworker in Indien",
+portfolio47: "Autom. Einkaufshilfe für Adidas",
+portfolio48: "Launchplan für Power-Nutzer",
+portfolio49: "Dein Streetfood-Begleiter zur Hand",
+portfolio50: "Food-Delivery-Markt in Indien verstehen",
+portfolio51: "Nutzersegmente & Feedback-Analyse",
+
+// rikth dutta
+portfolio52: "Analyst für Growth Equity & VC",
+portfolio53: "Fachkundig in Bewertung, Finanzmodellen und -berichten.",
+portfolio54: "Zertifizierter Finanzplaner (CFP) und Vermögensverwalter (CWM).",
+portfolio55: "Zertifiziert in NISM-VIII (Aktien-Derivate) & NCCMP von NSE.",
+portfolio56: "Leidenschaft für Start-ups, Aktienmärkte und Impact-Investing mit strategischem Denken.",
+portfolio57: "Analytisch",
+portfolio58: "Strategisch",
+portfolio59: "Gewissenhaft",
+portfolio60: "Professor",
+portfolio61: "Investment Research Analyst",
+portfolio62: "Marktforschungsanalyst",
+
+// Marketing Team Page
+marketing1: "Marketingteam",
+marketing2: "Als dynamisches Team fördern wir Zusammenarbeit, gestalten Kampagnen mit Wirkung und setzen Kreativität ein, um Markenpräsenz und Interaktion zu steigern. Mit Zeitmanagement und Trendbewusstsein schaffen wir ein positives Umfeld und liefern Top-Ergebnisse.",
+
+// aryan broy
+portfolio63: "Entwickler",
+portfolio64: "Leidenschaftlicher Full-Stack- & Mobile-Entwickler (Android & iOS)",
+portfolio65: "Erfahren in Frontend- und Backend-Entwicklung",
+portfolio66: "Liefern skalierbare, effiziente & benutzerfreundliche Lösungen",
+portfolio67: "Nutze Innovation & Teamwork für starke Ergebnisse",
+portfolio68: "Analytisch",
+portfolio69: "Genial",
+portfolio70: "Präzise",
+portfolio71: "Echtzeit-Collab-Canvas mit Next.js, TypeScript & WebSockets – reibungsloses, latenzarmes Teamzeichnen & Brainstorming.",
+portfolio72: "Medien-App mit Next.js, Clerk, Cloudinary, Prisma, PostgreSQL. Nutzer laden Bilder/Videos mit Thumbnails & Seitenverhältnis hoch. AI-Kompression & -Cropping. Öffentliches Posten & Download.",
+portfolio73: "Kernkompetenzen",
+portfolio74: "Full-Stack",
+portfolio75: "Entwicklung robuster Apps mit nahtloser Front- & Backend-Integration.",
+portfolio76: "Mobile App Entwickler",
+portfolio77: "Benutzerzentrierte Android/iOS-Apps mit modernem Design & Performance.",
+portfolio78: "Entwicklung smarter Lösungen mit KI/ML zur Optimierung & Innovation.",
+
+
+test1: "Freelance-Kunden vertrauen uns für kreative, hochwertige Arbeit, die ihre Erwartungen übertrifft. Von Websites bis Branding fördern klare Kommunikation und effiziente Umsetzung dauerhafte Partnerschaften.",
+test2: "Hat unsere Website in eine schlanke, benutzerfreundliche Plattform verwandelt und unsere digitale Präsenz mit effektiven Marketingstrategien gestärkt. Der Prozess war schnell und erfolgreich.",
+test3: "Hat unsere Marke mit einem starken Logo, klarer Identität und auffälligen Social-Media-Bannern belebt. Ihre Designs fingen unsere Vision ein und stärkten unsere Präsenz.",
+test4: "Hat unsere Vision sofort verstanden und geholfen, unsere Marke mit Klarheit und Stil zu verbessern. Das Endergebnis wirkte poliert, professionell und stimmte wirklich mit dem überein, wer wir sind."
+
                 
             }
             
